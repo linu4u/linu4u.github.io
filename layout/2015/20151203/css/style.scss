@@ -1,0 +1,158 @@
+@charset "utf-8";
+@import url(http://fonts.googleapis.com/css?family=Noto+Sans);
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+body {
+    font-family: 'Noto Sans', 'Nanum Gothic', sans-serif;
+    font-size: 100%;
+    word-break: break-all;
+}
+/*리누 기본 CSS*/
+
+.view_box {
+  margin: 50px;
+  width: 650px;
+  height: 540px;
+  overflow: hidden;
+}
+.hide_box {
+  width: 700px;
+  height: 700px;
+  background: #111;
+  position: relative;
+}
+
+[class^=cube_box] {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  float: left;
+  margin: 0 40px 40px 0;
+}
+
+.cube {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  transform-style: preserve-3d;
+  background: #333;
+}
+
+.cube figure {
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+  position: absolute;
+  box-sizing: border-box;
+  border: 2px solid #fff;
+  background: #000;
+  color: #fff;
+}
+
+
+.cube .front  {
+  transform: translateZ( 50px );
+}
+.cube .back   {
+  transform: rotateX( -180deg ) translateZ( 50px );
+}
+.cube .right {
+  transform: rotateY(   90deg ) translateZ( 50px );
+}
+.cube .left {
+  transform: rotateY(  -90deg ) translateZ( 50px );
+}
+.cube .top {
+  transform: rotateX(   90deg ) translateZ( 50px );
+}
+.cube .bottom {
+  transform: rotateX(  -90deg ) translateZ( 50px );
+}
+
+.cube {
+  transform: rotateX( -20deg ) rotateY( -45deg );
+  // animation: play 3s ease infinite;
+}
+
+.cube_box1 .cube {
+  animation: play1 2s ease infinite;
+}
+.cube_box2 .cube {
+  animation: play2 2s ease infinite;
+}
+.cube_box .cube {
+  animation: play3 2s ease infinite;
+}
+
+
+@keyframes play1 {
+  0% {
+    transform: rotateX( -20deg ) rotateY( -45deg );
+  }
+  // 30% {
+  //   transform: rotateX( -20deg ) rotateY( -45deg );
+  //   margin-top: 0px;
+  // }
+  60% {
+    transform: rotateX( -20deg ) rotateY( -135deg );
+    margin-top: -140px;
+  }
+  100% {
+    transform: rotateX( -20deg ) rotateY( -135deg );
+    margin-top: -140px;
+  }
+}
+@keyframes play2 {
+  0% {
+    transform: rotateX( -20deg ) rotateY( -45deg );
+  }
+  10% {
+    transform: rotateX( -20deg ) rotateY( -45deg );
+    margin-top: 0px;
+  }
+  70% {
+    transform: rotateX( -20deg ) rotateY( 45deg );
+    margin-top: -140px;
+  }
+  100% {
+    transform: rotateX( -20deg ) rotateY( 45deg );
+    margin-top: -140px;
+  }
+}
+@keyframes play3 {
+  0% {
+    transform: rotateX( -20deg ) rotateY( -45deg );
+  }
+  20% {
+    transform: rotateX( -20deg ) rotateY( -45deg );
+    margin-top: 0px;
+  }
+  80% {
+    transform: rotateX( -20deg ) rotateY( -135deg );
+    margin-top: -140px;
+  }
+  100% {
+    transform: rotateX( -20deg ) rotateY( -135deg );
+    margin-top: -140px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* */

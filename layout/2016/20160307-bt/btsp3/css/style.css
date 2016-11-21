@@ -1,0 +1,59 @@
+
+.box {
+    height: 50px;
+    text-align: center;
+    border: 1px solid blue;
+    background-color: #efefef;    
+}
+
+
+.h150 {
+    height: 150px;
+}
+
+.h180 {
+    height: 180px;
+}
+
+.h250 {
+    height: 250px;
+}
+.h200 {
+    height: 200px;
+}
+
+.mr15 {
+    margin-right: 15px; 
+}
+
+
+
+
+
+.br1 {
+    outline: 1px solid red;
+}
+
+
+
+/*
+  .row {
+    outline: 1px solid red;
+ }
+*/
+
+.br2 {
+    outline: 1px solid blue;
+}
+
+#columns {
+    -webkit-column-count: 3;
+	-webkit-column-gap: 10px;
+	-webkit-column-fill: auto;
+	-moz-column-count: 3;
+	-moz-column-gap: 10px;
+	-moz-column-fill: auto;
+	column-count: 3;
+	column-gap: 15px;
+	column-fill: auto;
+}

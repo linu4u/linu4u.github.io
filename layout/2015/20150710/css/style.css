@@ -1,0 +1,200 @@
+@charset "UTF-8";
+@import url(http://fonts.googleapis.com/css?family=Noto+Sans);
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none; }
+
+body {
+  font-family: 'Noto Sans', 'Nanum Gothic', sans-serif;
+  font-size: 100%;
+  word-break: break-all; }
+
+.box {
+  border: 1px solid #333;
+  box-sizing: border-box; }
+
+/*리누 기본 CSS*/
+.left_box {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 50%;
+  bottom: 0;
+  overflow: hidden; }
+
+.right_box {
+  position: fixed;
+  top: 0;
+  left: 50%;
+  right: 0;
+  bottom: 0;
+  overflow-x: hidden; }
+
+[class^="content_box"] {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  -webkit-transition: 0.5s all ease;
+  -o-transition: 0.5s all ease;
+  transition: 0.5s all ease; }
+  [class^="content_box"] h1 {
+    margin: 50px;
+    color: #fff; }
+
+.content_box1 {
+  left: 0;
+  right: 0;
+  z-index: 3;
+  background: url(http://linu4u.github.io/layout/20150526/img/img_01.jpg) no-repeat center center;
+  background-size: cover; }
+  .content_box1::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: RGBA(0, 152, 239, 0.8);
+    z-index: -1; }
+
+.content_box2 {
+  left: 100%;
+  right: -100%;
+  z-index: 2;
+  background: url(http://linu4u.github.io/layout/20150526/img/img_02.jpg) no-repeat center center;
+  background-size: cover; }
+  .content_box2::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: RGBA(246, 27, 99, 0.5);
+    z-index: -1; }
+
+.content_box3 {
+  left: 100%;
+  right: -100%;
+  z-index: 1;
+  background: url(http://linu4u.github.io/layout/20150526/img/img_03.jpg) no-repeat center center;
+  background-size: cover; }
+  .content_box3::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: RGBA(0, 150, 136, 0.8);
+    z-index: -1; }
+
+.prev_btn {
+  position: absolute;
+  left: 0;
+  right: 50%;
+  bottom: 0;
+  z-index: 4;
+  background: rgba(0, 0, 0, 0.5);
+  height: 50px;
+  text-align: center;
+  font-size: 20px;
+  color: #333;
+  line-height: 50px;
+  cursor: no-drop; }
+
+.next_btn {
+  position: absolute;
+  left: 50%;
+  right: 0;
+  bottom: 0;
+  z-index: 4;
+  background: rgba(0, 0, 0, 0.5);
+  height: 50px;
+  text-align: center;
+  font-size: 20px;
+  color: #fff;
+  line-height: 50px; }
+
+.next_btn:hover {
+  cursor: pointer;
+  background: rgba(0, 0, 0, 0.8); }
+
+.one_click .content_box1 {
+  left: -100%;
+  right: 100%; }
+.one_click .content_box2 {
+  top: 0;
+  left: 0;
+  right: 0; }
+.one_click .prev_btn {
+  color: #fff; }
+  .one_click .prev_btn:hover {
+    cursor: pointer;
+    background: rgba(0, 0, 0, 0.8); }
+
+.two_click .content_box2 {
+  left: -100%;
+  right: 100%; }
+.two_click .content_box3 {
+  left: 0;
+  right: 0; }
+.two_click .next_btn {
+  color: #333; }
+  .two_click .next_btn:hover {
+    cursor: no-drop;
+    background: rgba(0, 0, 0, 0.5); }
+
+[class^="rcontent_box"] {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  -webkit-transition: 0.5s all ease;
+  -o-transition: 0.5s all ease;
+  transition: 0.5s all ease; }
+  [class^="rcontent_box"] p {
+    margin-top: 30px;
+    padding: 20px; }
+    [class^="rcontent_box"] p:first-child {
+      font-weight: 800;
+      font-size: 18px; }
+
+.rcontent_box1 {
+  background: #fff;
+  left: 0;
+  right: 0;
+  z-index: 3; }
+
+.rcontent_box2 {
+  background: #fff;
+  left: 100%;
+  right: -100%;
+  z-index: 2; }
+
+.rcontent_box3 {
+  background: #fff;
+  left: 100%;
+  right: -100%;
+  z-index: 1; }
+
+.one_click .rcontent_box1 {
+  left: -100%;
+  right: 100%; }
+.one_click .rcontent_box2 {
+  left: 0;
+  right: 0; }
+
+.two_click .rcontent_box2 {
+  left: -100%;
+  right: 100%; }
+.two_click .rcontent_box3 {
+  left: 0;
+  right: 0; }
+
+/* */

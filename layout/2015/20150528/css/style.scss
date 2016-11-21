@@ -1,0 +1,100 @@
+@charset "utf-8";
+@import url(http://fonts.googleapis.com/css?family=Noto+Sans);
+* {
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+	list-style: none;
+}
+body {
+	font-family: 'Noto Sans', 'Nanum Gothic', sans-serif;
+	font-size: 100%;
+	word-break: break-all
+}
+.box {border: 1px solid #333;box-sizing: border-box}
+/*리누 기본 CSS*/
+
+
+.big_box {
+	position: absolute;
+	width: 90%;
+	height: 90vh;
+	border: 1px solid #333;
+	background: #efefef;
+	margin: auto;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  .m_box {
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+  .main_box {
+    // 변수 선언
+    $pt: 100px; //포지션 top 탑사이즈
+    $pl: 100px; // 포지션 left 사이즈
+    @mixin hover {
+      p {
+        opacity: 1;
+      }
+      -webkit-transform: scale(1.2,1.2);
+      -ms-transform: scale(1.2,1.2);
+      -o-transform: scale(1.2,1.2);
+      transform: scale(1.2,1.2);
+    }
+    // 변수 선언
+
+    position: absolute;
+    border: 1px solid #333;
+    box-sizing: border-box;
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    line-height: 100px;
+
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    border-radius: 50%;
+
+    -webkit-transition: .2s all cubic-bezier(0.175, 0.885, 0.715, 1.5);
+    -o-transition: .2s all cubic-bezier(0.175, 0.885, 0.715, 1.5);
+    transition: .2s all cubic-bezier(0.175, 0.885, 0.715, 1.5);
+    p {
+      opacity: 0;
+    }
+    &:nth-child(1) { // 첫번째 동그라미
+      top: $pt;
+      left: $pl;
+      &:hover {
+        @include hover;
+      }
+    }
+    &:nth-child(2) { // 두번째 동그라미
+      top: $pt;
+      left: $pl*2.2;
+      &:hover {
+        @include hover;
+      }
+    }
+
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* */

@@ -1,0 +1,155 @@
+/* 리셋 기본 css */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* 리셋 기본 css */
+
+body {
+    perspective: 1000px;
+}
+
+.box {
+    border: 1px solid #333;
+    box-sizing: border-box;
+}
+
+.logo {
+    position: fixed;
+    width: 100px;
+    height: 100px;
+    margin: 30px;
+    text-align: center;
+    line-height: 100px;
+    background: #ccc;
+    z-index: 2;
+}
+
+.menu {
+    position: fixed;
+    width: 30px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    background: #999;
+    color: #fff;
+    top: 275px;
+    z-index: 1;
+    cursor: pointer;
+}
+.menu:hover ~ .mainview, .menuview:hover ~ .mainview  {
+    margin-left: 100px;
+    padding-left: 160px;
+    background: #eee;
+    width: 520px;
+    -webkit-transform: rotateY(40deg) scale(.8);
+    transform: rotateY(40deg) scale(.8);
+    
+}
+.menu:hover ~ .menuview, .menuview:hover  {
+    left: 0;
+}
+
+.mainview {
+    padding-left: 160px;
+    background: #eee;
+    width: 520px;
+    transition: all .3s ease;
+}
+
+.mainview .box {
+    width: 500px;
+    height: 300px;
+}
+.menuview {
+    position: absolute;
+    width: 100px;
+    background: #333;
+    padding: 30px;
+    top: 0;
+    bottom: 0;
+    left: -160px;
+    transition: all .3s ease;
+    z-index: 1;
+}
+.menuview ul {
+    margin-top: 130px;
+    color: #fff;
+}
+
+.menuview ul li {
+    line-height: 20px;
+    cursor: pointer;
+    transition: all .3s ease;
+
+}
+
+.menuview ul li:hover {
+    letter-spacing: 2px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

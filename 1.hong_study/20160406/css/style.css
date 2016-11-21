@@ -1,0 +1,217 @@
+@charset "UTF-8";
+
+/* 리셋 기본 css */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after, q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+/* 리셋 기본 css */
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 70px;
+    background: #fff;
+    -moz-box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.3);
+    -webkit-box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.3);
+}
+header nav {
+    width: 940px;
+    margin: 0 auto;
+}
+header nav h1 {
+    float: left;
+    width: 177px;
+}
+header nav h1 img {
+    width: 100%;
+}
+header nav ul {
+    float: right;
+}
+header nav ul li {
+    margin: 30px 20px 0;
+    float: left;
+    font-size: 13px;
+    font-weight: 600;
+}
+header nav ul li.icon {
+    width: 30px;
+    margin-right: 10px;
+    cursor: pointer;
+    position: relative;
+}
+header nav ul li.icon img {
+    width: 100%;
+    margin-top: -10px;
+}
+header nav ul li.icon p {
+    position: absolute;
+    right: -6px;
+    bottom: 0;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #00C300;
+    color: #fff;
+    font-size: 13px;
+    font-weight: lighter;
+    line-height: 22px;
+    text-align: center;
+}
+section {
+    width: 944px;
+    margin: 0 auto;
+}
+section.main_top {
+    width: 100%;
+    padding-top: 70px;
+}
+section.main_top div.slide {
+    width: 100%;
+}
+section.main_top div.slide img {
+    width: 100%;
+}
+section.banner {
+    padding: 70px 0;
+}
+section.banner img {
+    width: 100%;
+}
+ul.top_product_2::after {
+    display: block;
+    content: '';
+    clear: both;
+}
+ul.top_product_2 li {
+    width: 464px;
+    float: left;
+}
+ul.top_product_2 li:first-child {
+    margin-right: 15px;
+}
+ul.top_product_2 li img {
+    width: 100%;
+}
+ul.top_product_4, ul.product_8 {
+    padding: 70px 0;
+}
+ul.top_product_4::after, ul.product_8::after {
+    display: block;
+    content: '';
+    clear: both;
+}
+ul.top_product_4 li, ul.product_8 li {
+    width: 224px;
+    float: left;
+    margin-right: 15px;
+}
+ul.top_product_4 li:last-child, ul.product_8 li:last-child {
+    margin-right: 0;
+}
+ul.top_product_4 li img, ul.product_8 li img {
+    width: 100%;
+}
+ul.product_8 {
+    padding: 0;
+}
+ul.product_8 li {
+    margin-bottom: 50px;
+}
+ul.product_8 li:nth-child(4n+4) {
+    margin-right: 0;
+}
+ul.product_8 li figcaption {
+    text-align: center;
+    padding: 10px 0;
+    font-size: 13px;
+    line-height: 16px;
+}
+ul.product_8 li figcaption p.product_name {
+    font-weight: 300;
+}
+ul.product_8 li figcaption p.product_price {
+    font-weight: 800;
+}
+h1.product_title {
+    font-size: 20px;
+    padding: 20px 0;
+}
+div.product_allview {
+    text-align: center;
+    padding: 50px 0 70px;
+    cursor: pointer;
+}
+div.product_allview p {
+    display: inline-block;
+    padding: 20px;
+    color: #fff;
+    background: #979AA6;
+}
+div.product_allview p::after {
+    content: " >";
+}
+section.sns h1.instagram_id {
+    font-size: 18px;
+}
+section.instagram {
+    width: 100%;
+}
+section.instagram ul.instagram::after {
+    display: block;
+    content: '';
+    clear: both;
+}
+section.instagram ul.instagram li {
+    width: 12.5%;
+    height: 12.5vw;
+    float: left;
+}
+section.instagram ul.instagram li img {
+    width: 100%;
+    vertical-align: middle;
+}
+footer {
+    background: #F6F6F6;
+    height: 120px;
+    font-size: 11px;
+    color: #aaa;
+}
+footer .footer_box {
+    width: 944px;
+    margin: 0 auto;
+}
+footer .footer_menu {
+    float: left;
+}
+
+/* */

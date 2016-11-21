@@ -1,0 +1,274 @@
+@import 'reset'; // 리셋
+
+body {
+	font-family: sans-serif;
+}
+input:focus, select:focus{
+    outline: none;
+}
+
+
+header {
+	position: relative;
+	overflow: hidden;
+	border-bottom: 1px solid #E6E6E6; box-sizing: border-box;
+	h1 {
+		width: 120px;
+		margin: 54px auto 0;
+		img {
+			width: 100%;
+		}
+	}
+	nav {
+		.top_menu_box{
+			position: absolute;
+			top: 0;
+			left: 0;
+			right: 0;
+			background-color: #F1F1F1;
+			height: 34px;
+		}
+		.top_menu {
+			width: 1140px;
+			margin: 0 auto;
+			ul {
+				width: 420px;
+				float: right;
+				margin: 0 auto;
+				padding-top: 8px;
+				&::after {display: block;content: '';clear: both;} //clear both
+				li {
+					font-size: 14px;
+					color: #666;
+					float: left;
+					&::after {
+						content: '|';
+						padding: 0 5px;
+						font-size: 13px;
+						vertical-align: top;
+						clear: both;
+					}
+					&:nth-last-child(2), &:last-child {
+						&::after {
+							content: '';
+						}
+					}
+					div {
+						float: left;
+						input {
+							width: 80px;
+							font-size: 1em;
+							border: none;
+							background: none;
+						}
+						img {
+							margin-top: -2px;
+						}
+					}
+				}
+			}
+		} //top_menu
+
+		.main_menu {
+			width: 1140px;
+			padding-bottom: 10px;
+			margin: 0 auto;
+			ul {
+				display: -webkit-box;display: -moz-box;display: -ms-flex;display: -webkit-flex;display: flex; //flex 부모 IE 10부터 지원
+				li {
+					-webkit-box-flex: 1;-moz-box-flex: 1;-ms-flex: 1;-webkit-flex: 1;flex: 1; // flex 자식
+
+					font-size: 18px;
+					font-weight: 500;
+					padding-top: 30px;
+					text-align: center;
+
+					&:last-child, &:first-child {
+						text-align: inherit;
+						padding-top: 0;
+					}
+					&:first-child {
+						max-width: 60px;
+						width: 60px;
+						min-width: 60px;
+					}
+					&:last-child {
+						max-width: 150px;
+						width: 150px;
+						min-width: 150px;
+					}
+				}
+			}
+		}
+	} //nav
+} //header
+
+main {
+	width: 1140px;
+	margin: 0 auto;
+	.main_content {
+		ul {
+			display: -webkit-box;display: -moz-box;display: -ms-flex;display: -webkit-flex;display: flex; //flex 부모 IE 10부터 지원
+			li {
+				-webkit-box-flex: 1;-moz-box-flex: 1;-ms-flex: 1;-webkit-flex: 1;flex: 1; // flex 자식
+				background: #F7F0F0;
+				margin-right: 20px;
+				text-align: center;
+				padding: 80px 0;
+				img {
+					width: 92px;
+				}
+				h2 {
+					padding: 50px 0;
+					font-size: 38px;
+					line-height: 48px;
+				}
+				p {
+					border: 2px solid #D9D2D2;
+					box-sizing: border-box;
+					width: 160px;
+					height: 50px;
+					margin: 0 auto;
+					border-radius: 50px;
+					line-height: 46px;
+					font-size: 20px;
+					color: #333;
+				}
+				&:first-child {
+					background: #E64545;
+					color: #fff;
+					p {
+						border-color: #fff;
+						color: #fff;
+					}
+				}
+				&:last-child {
+					margin-right: 0;
+				}
+			} //li
+		}
+	} //main_content
+	.sub_content {
+		margin: 40px 0 5px;
+		.keyword {
+			background: #EBF2F5;
+			text-align: center;
+			&::after {display: block;content: '';clear: both;} //clear both
+			.title {
+				width: 200px;
+				float: left;
+				padding: 22px 0;
+				p {
+					height: 30px;
+					color: #f33;
+					font-size: 20px;
+					line-height: 30px;
+				}
+			}
+			.keywords {
+				width: 900px;
+				float: left;
+				padding: 22px 0;
+				ul {
+					li {
+						height: 30px;
+						line-height: 32px;
+						float: left;
+						background: #fff;
+						padding: 0 17px;
+						border-radius: 30px;
+						margin-right: 10px;
+					}
+				}
+			}
+			.arrow_box {
+				height: 30px;
+				cursor: pointer;
+				width: 40px;
+				float: left;
+			}
+		} //keyword
+		.sub_link_box {
+			&::after {display: block;content: '';clear: both;} //clear both
+			div {
+				float: left;
+				margin: 0 24px 24px 0;
+				&.box3, &.box5, &.box7 {
+					margin-right: 0;
+				}
+			}
+		} //sub_link_box
+		.sns_link {
+			width: 500px;
+			margin: 25px auto 20px;
+			display: -webkit-box;display: -moz-box;display: -ms-flex;display: -webkit-flex;display: flex; //flex 부모 IE 10부터 지원
+			li {
+				-webkit-box-flex: 1;-moz-box-flex: 1;-ms-flex: 1;-webkit-flex: 1;flex: 1; // flex 자식
+				text-align: center;
+				img {
+					cursor: pointer;
+				}
+			}
+		} //sns_link
+	} //sub_content
+} //main
+
+footer {
+	background: #727272;
+	padding: 30px 0 40px;
+	.footer_main {
+		width: 1140px;
+		margin: 0 auto;
+		&::after {display: block;content: '';clear: both;} //clear both
+		ul {
+			float: left;
+			width: 900px;
+			li {
+				color: #fff;
+				float: left;
+				padding: 10px 0;
+				font-weight: 400;
+				strong {
+					font-weight: bold;
+				}
+				&::after {
+					content: ' | ';
+					padding: 0 5px;
+					font-size: 14px;
+					vertical-align: top;
+					color: #929294;
+				}
+				&:nth-child(4n+4) {
+					&::after {
+						content: '';
+					}
+				}
+			}
+		}
+		.family_site {
+			float: right;
+			select {
+				padding: 7px 3px;
+				background: #727272;
+				border: 1px solid #fff;
+				color: #fff;
+			}
+		}
+	}
+} //footer
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*    */

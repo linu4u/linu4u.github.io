@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<!-- 오픈그래프 프로토콜 -->
+	<meta name="title" content="">
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	<meta property="og:site_name" content="">
+	<meta property="og:url" content="">
+	<meta property="og:title" content="">
+	<meta property="og:type" content="website">
+	<meta property="og:image" content="">
+	<meta property="og:description" content="">
+	<!-- //오픈그래프 프로토콜 -->
+	<title> 2016.06.30 - title </title>
+	<!-- <link rel="stylesheet" href="css/style.css"> -->
+	<style>
+	* {
+		margin: 0;
+		padding: 0;
+	}
+	.sh_tip_menu {
+		height: 30px;
+		background: #efefef;
+	}
+	.gnb {
+		position: absolute;
+		top: 30px;
+		left: 0;
+		right: 0;
+		height: 70px;
+		padding: 10px;
+		background: #ff0;
+		border: 1px solid #333; box-sizing: border-box;
+	}
+	.top_nav {
+		width: 800px;
+		height: 50px;
+		border: 1px solid #333; box-sizing: border-box;
+		background: #fff;
+
+	}
+	.top_nav p {
+		line-height: 50px;
+	}
+	.top_nav_s {
+		display: none;
+		background: #0ff;
+
+	}
+	.top_nav_bg {
+		display: none;
+		position: absolute;
+		top: 30px;
+		left: 0;
+		right: 0;
+		height: 200px;
+		background: #f00;
+	}
+	</style>
+</head>
+<body>
+	<!-- 페이지 시작 -->
+	<!-- 헤더 -->
+	<header>
+		<div class="top_nav_bg"></div>
+		<div class="sh_tip_menu"> 북마크 어쩌고 저쩌고</div>
+		<div class="gnb">
+			<div class="top_nav">
+				<p>샤뱌샤뱌</p>
+				<ul class="top_nav_depth1 top_nav_s" >
+					<li><a href="/sh_page/page29.php" class="">행사요강</a></li>
+					<li><a href="/sh_page/page30.php" class="">참가부문 및 시상</a></li>
+					<li><a href="/sh_page/page31.php" class="">참가자 유의사항</a></li>
+					<li><a href="/sh_page/page32.php" class="">등록선수 안내</a></li>
+					<li><a href="/sh_page/page33.php" class="">참가신청 및 접수안내</a></li>
+					<li><a href="/sh_page/page34.php" class="">기념품</a></li>
+			   </ul>
+			</div>
+
+		</div>
+
+	</header>
+	<!-- //헤더 -->
+	<!-- //페이지 끝 -->
+	<!-- 자바스크립트 -->
+	<script src="http://code.jquery.com/jquery.js"></script>
+	<script src="js/common.js"></script>
+	<!-- 내부 스크립트 -->
+	<script>
+	$(document).ready(function() {
+
+
+	// 일단 탑메뉴에 마우스가 들어가면 서브 메뉴랑 메뉴배경을 나오게 한다
+	$(".top_nav").mouseenter(function(){
+		$(".top_nav_s").slideDown(300);
+		$(".top_nav_bg").slideDown(280);
+	})
+	 // 마우스가 메뉴배경을 벗어날때 슬라이드를 닫는다
+	$(".top_nav_bg").mouseleave(function(){
+		$('.top_nav_s').stop();
+	  	$(".top_nav_s").slideUp(280);
+	  	$('.top_nav_bg').stop();
+		$(".top_nav_bg").slideUp(300);
+		//근데 만약 마우스가 메뉴배경을 벗어나면서 top를 감싸고 있는 여백 gnb에 들어간다면 닫지않고 멈춘다
+		$(".gnb").mouseenter(function(){
+			$('.top_nav_s').stop();
+			$('.top_nav_bg').stop();
+			$(".top_nav_s").slideDown(300);
+			$(".top_nav_bg").slideDown(280);
+		});
+	});
+	// 북마크 있는쪽으로 마우스가 올라가면 슬라이드 닫는다
+	$(".sh_tip_menu").mouseenter(function(){
+		$('.top_nav_s').stop();
+	  	$(".top_nav_s").slideUp(280);
+	  	$('.top_nav_bg').stop();
+		$(".top_nav_bg").slideUp(300);
+	})
+
+
+	// $(".top_nav").mouseenter(function(){
+	// 	 	$(".top_nav_s").slideDown(300);
+	// 		$(".top_nav_bg").slideDown(380);
+	// 	}).mouseleave(function(){
+	// 		$('.top_nav_s').stop();
+	// 	  	$(".top_nav_s").slideUp(280);
+	// 	  	$('.top_nav_bg').stop();
+	// 		$(".top_nav_bg").slideUp(300);
+	// 	});
+
+
+	}); //$(document).ready(function()
+	</script>
+	<!-- //자바스크립트 -->
+</body>
+</html>

@@ -1,0 +1,60 @@
+
+<html>
+	<head>
+		<meta charset="utf-8">
+	</head>
+	<body>
+		<div id="fixed_toggle" style="width: 500px;height: 500px;background-color: green;"></div>
+		<a href="sub.php"> SUB 페이지 이동 </a>
+		<script>
+			function setCookie(cname, cvalue, exdays) 
+			{
+			    var d = new Date();
+			   // d.setTime(d.getTime() + (exdays*24*60*60*1000));
+			   // var expires = "expires="+d.toUTCString();
+			    document.cookie = cname + "=" + cvalue + "; ";
+			}
+			
+			
+			
+			function getCookie(cname) 
+			{
+			    var name = cname + "=";
+			    var ca = document.cookie.split(';');
+			    for(var i=0; i<ca.length; i++) {
+			        var c = ca[i];
+			        while (c.charAt(0)==' ') c = c.substring(1);
+			        if (c.indexOf(name) == 0) return c.substring(name.length,c.length);
+			    }
+			    return "";
+			}
+		</script>
+		<script>
+			var isBox = Number(getCookie("isCookie"));
+
+			var divBox = document.getElementById("fixed_toggle");
+			var divBox2 = document.getElementById("text_garam");
+			var boxState = function(isState){
+				if(isState){
+					divBox.style = "right: auto; left: -76px; background: url('http://semiro.godohosting.com/design/close.png');";
+					divBox2.style ="dispaly:block;";
+					setCookie("isCookie",1);
+					isBox = false;
+				}else{
+					divBox.style = "right: 0px; left: auto; background: url('http://semiro.godohosting.com/design/open.png');";
+					divBox2.style ="dispaly:none;";
+					isBox = true;
+					setCookie("isCookie",0);
+				}
+			}
+			
+			boxState(isBox);
+			
+			divBox.addEventListener("click", function(){
+				boxState(isBox);
+			});
+			
+		
+		</script>
+	</body>
+</html>

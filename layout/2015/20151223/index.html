@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- 오픈그래프 프로토콜 -->
+  <meta name="title" content="">
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  <meta property="og:site_name" content="">
+  <meta property="og:url" content="">
+  <meta property="og:title" content="">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="">
+  <meta property="og:description" content="">
+  <!-- //오픈그래프 프로토콜 -->
+  <title>2015. 12. 23 - title </title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<!-- 페이지 시작 -->
+  <!-- 헤더 -->
+  <header>
+<!-- 20151223 스크롭 배너 삽입 아이디어키 백창인 -->
+<div style="z-index:999;" id="scroll_banner" >
+  <img src="http://borrowautolease.co.kr/images/scroll_banner.jpg" usemap="#scroll_banner">
+  <map name="scroll_banner">
+    <area shape="rect" alt="블로그" title="" coords="0,489,178,555" href="http://blog.naver.com/PostThumbnailList.nhn?blogId=brmaketing&from=postList&categoryNo=19" target="_blank" />
+    <area shape="rect" alt="페이스북" title="" coords="0,557,178,621" href="https://www.facebook.com/중고차꿀팁-298237833633634/?fref=ts" target="_blank" />
+    <area shape="rect" alt="카카오스토리" title="" coords="0,623,178,688" href="https://story.kakao.com/ch/borrow3172" target="_blank" />
+  </map>
+</div>
+<!-- 20151223 스크롭 배너 삽입 아이디어키 백창인 -->
+  </header>
+  <!-- //헤더 -->
+  <!-- 메인섹션 -->
+  <section style="height:3000px">
+  </section>
+  <!-- //메인섹션 -->
+  <!-- 푸터 -->
+  <footer>
+
+  </footer>
+  <!-- //푸터 -->
+<!-- //페이지 끝 -->
+<!-- 자바스크립트 -->
+<script src="http://code.jquery.com/jquery.js"></script>
+<script src="js/common.js"></script>
+<!-- 내부 스크립트 -->
+<!-- 우측 따라다니는 메뉴 -->
+
+<script type="text/javascript">
+  $(function() {
+    var offset = $("#scroll_banner").offset();
+    var topPadding = 15;
+    $(window).scroll(function() {
+      if ($(window).scrollTop() > offset.top) {
+        $("#scroll_banner").stop().animate({
+            marginTop: $(window).scrollTop() - offset.top + topPadding
+        }, 500);
+      } else {
+        $("#scroll_banner").stop().animate({
+            marginTop: 0
+        });
+      };
+     });
+  });
+</script>
+<!-- 우측 따라다니는 메뉴 끝 -->
+
+<!-- //자바스크립트 -->
+</body>
+</html>

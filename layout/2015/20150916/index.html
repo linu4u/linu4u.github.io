@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, target-densitydpi=medium-dpi">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- 오픈그래프 프로토콜 -->
+  <meta name="title" content="">
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  <meta property="og:site_name" content="">
+  <meta property="og:url" content="">
+  <meta property="og:title" content="">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="">
+  <meta property="og:description" content="">
+  <!-- //오픈그래프 프로토콜 -->
+  <title>2015. 09. 16 - title </title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<!-- 페이지 시작 -->
+  <!-- 헤더 -->
+  <header>
+
+  </header>
+  <!-- //헤더 -->
+  <!-- 메인섹션 -->
+  <section>
+    <input type="checkbox" id="cb1" class="">
+    <label for="cb1" class="checkbox"> 모든매체 </label>
+    <span id="sub_channel">[ 세부매체 선택 ]</span>
+    <div class="sub_channel">
+      <input type="checkbox" id="cb2" class="">
+      <label for="cb2" class="checkbox"> 네이버 상품 전체 </label>
+      <span id="sub_channel2">[ 세부매체 선택 ]</span> <br>
+      <div class="sub_channel2">
+        <input type="checkbox" id="cb3" class="">
+        <label for="cb3" class="checkbox"> 검색 광고 </label> <br>
+        <input type="checkbox" id="cb4" class="">
+        <label for="cb4" class="checkbox"> 디스플레이 광고 </label> <br>
+        <input type="checkbox" id="cb5" class="">
+        <label for="cb5" class="checkbox"> 네이버 쇼핑 </label>
+      </div>
+      <input type="checkbox" id="cb21" class="">
+      <label for="cb21" class="checkbox"> 다음상품 전체 </label><br>
+      <!-- <span id="sub_channel2">[ 세부매체 선택 ]</span>  -->
+      <input type="checkbox" id="cb22" class="">
+      <label for="cb22" class="checkbox"> 기타매체 상품 전체 </label>
+      <!-- <span id="sub_channel2">[ 세부매체 선택 ]</span> -->
+    </div>
+  </section>
+  <!-- //메인섹션 -->
+  <!-- 푸터 -->
+  <footer>
+
+  </footer>
+  <!-- //푸터 -->
+<!-- //페이지 끝 -->
+<!-- 자바스크립트 -->
+<script src="http://code.jquery.com/jquery.js"></script>
+<!-- <script src="js/common.js"></script> -->
+<!-- 내부 스크립트 -->
+<script>
+$("#sub_channel").click(function() {
+  if ($("#cb1").hasClass("add")) {
+  $("#cb1").removeClass("add");
+  }
+  else {
+    $("#cb1").addClass("add");
+  }
+});
+
+$("#sub_channel2").click(function() {
+  if ($("#cb2").hasClass("add2")) {
+  $("#cb2").removeClass("add2");
+  }
+  else {
+    $("#cb2").addClass("add2");
+  }
+});
+</script>
+<!-- //자바스크립트 -->
+</body>
+</html>

@@ -1,0 +1,147 @@
+@charset "utf-8";
+@import url(http://fonts.googleapis.com/css?family=Noto+Sans);
+/* 리셋 기본 css */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* 리셋 기본 css */
+
+body {
+    font-size: 10vw;
+    font-family: 'Noto Sans', 'Nanum Gothic', sans-serif;
+    height: 100%;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+#nav {
+    position: absolute;
+    width: 14em;
+    top: 0;
+    left: -14em;
+    bottom: 0;
+    background: #727272;
+    font-size: .6em;
+    transition: .5s all ease;
+    z-index: 1;
+}
+#nav:target {
+    left: 0;
+}
+
+nav ul {
+    padding-top: 5em;
+}
+nav ul li {
+    display: block;
+    width: 13em;
+    margin: 0 auto;
+    padding: .25em 0;
+    text-align: center;
+}
+nav ul li a {
+    display: block;
+    padding: .5em;
+    border-radius: .3em;
+    background: #666;
+    color: #fff;
+    border: 1px solid #333;
+}
+
+section {
+    background: #fff;
+    transition: .5s all ease
+}
+
+#nav:target ~ 
+section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(51, 51, 51, 0.3);
+}
+
+section header {
+    overflow: hidden;
+    background: #aaa;
+    padding: .1em;
+}
+section header .hamburger_menu {
+    width: 1.2em;
+    
+    padding: .2em .1em;
+    text-align: center;
+/*    border: 1px solid #333;*/
+    float: left;
+}
+section header .app_title {
+    font-size: .7em;
+    padding-top: .53em;
+    margin-left: 2.3em;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

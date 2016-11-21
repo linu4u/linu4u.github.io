@@ -1,0 +1,70 @@
+$divw: 400px;
+$divh: 300px;
+$mcolor: #c1d2ff;
+$bstyle: 1px solid #333;
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+div {
+    width: $divw;
+    height: $divh;
+    border: $bstyle;
+    background: $mcolor;
+    box-sizing: border-box;
+    &:hover {
+        background: lighten($mcolor, 20%);
+    }
+    div {
+        $divw: $divw/1.1;
+        $divh: $divh/1.1;
+        $mcolor: lighten($mcolor, 2%);
+        width: $divw;
+        height: $divh;
+        background: $mcolor;
+        div {
+            $divw: $divw/1.1;
+            $divh: $divh/1.1;
+            $mcolor: lighten($mcolor, 2%);
+            width: $divw;
+            height: $divh;
+            background: $mcolor;
+            div {
+                $divw: $divw/1.1;
+                $divh: $divh/1.1;
+                $mcolor: lighten($mcolor, 2%);
+                width: $divw;
+                height: $divh;
+                background: $mcolor;
+                div {
+                    $divw: $divw/1.1;
+                    $divh: $divh/1.1;
+                    $mcolor: darken($mcolor, 10%);
+                    width: $divw;
+                    height: $divh;
+                    background: $mcolor;
+                    div {
+                        $divw: $divw/1.1;
+                        $divh: $divh/1.1;
+                        $mcolor: darken($mcolor, 10%);
+                        width: $divw;
+                        height: $divh;
+                        background: $mcolor;
+                        div {
+                            $divw: $divw/1.1;
+                            $divh: $divh/1.1;
+                            $mcolor: darken($mcolor, 10%);
+                            width: $divw;
+                            height: $divh;
+                            background: $mcolor;
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+    
+}

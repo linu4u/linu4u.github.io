@@ -1,0 +1,11 @@
+[class^="col"] {
+	border: 1px solid #333; box-sizing: border-box;
+	height: 50px;
+	background: #ccc;
+}
+
+.container {
+	padding: 40px;
+	border: 1px solid #333; box-sizing: border-box;
+	/*box-sizing: border-box;*/
+}

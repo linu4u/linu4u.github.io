@@ -1,0 +1,465 @@
+@charset "UTF-8";
+/* 리셋 기본 css */
+a, abbr, acronym, address, applet, article, aside, audio, b, big, blockquote, body, canvas, caption, center, cite, code, dd, del, details, dfn, div, dl, dt, em, embed, fieldset, figcaption, figure, footer, form, h1, h2, h3, h4, h5, h6, header, hgroup, html, i, iframe, img, ins, kbd, label, legend, li, mark, menu, nav, object, ol, output, p, pre, q, ruby, s, samp, section, small, span, strike, strong, sub, summary, sup, table, tbody, td, tfoot, th, thead, time, tr, tt, u, ul, var, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  vertical-align: baseline; }
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:after, blockquote:before, q:after, q:before {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+a {
+  color: inherit;
+  text-decoration: none; }
+
+/* 리셋 기본 css */
+header div.top_menu {
+  position: fixed;
+  z-index: 5;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 82px;
+  border-top: 3px solid #E79D00;
+  box-sizing: border-box;
+  background: #fff;
+  -webkit-box-shadow: 0 1px 8px 0 rgba(0, 0, 0, 0.38), 0 1px 8px 0 transparent;
+  -moz-box-shadow: 0 1px 8px 0 rgba(0, 0, 0, 0.38), 0 1px 8px 0 transparent;
+  box-shadow: 0 1px 8px 0 rgba(0, 0, 0, 0.38), 0 1px 8px 0 transparent; }
+  header div.top_menu div.menu_box {
+    width: 1120px;
+    margin: 0 auto;
+    height: 60px;
+    position: relative; }
+    header div.top_menu div.menu_box h1 {
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      text-indent: -9999px;
+      background: url(../images/logo1.jpg);
+      width: 130px;
+      height: 41px; }
+    header div.top_menu div.menu_box nav {
+      position: absolute;
+      right: 0;
+      bottom: 0; }
+      header div.top_menu div.menu_box nav ul li {
+        float: left;
+        font-size: 15px;
+        color: #666;
+        font-weight: 700;
+        margin-right: 40px; }
+        header div.top_menu div.menu_box nav ul li:last-child {
+          margin-right: 0; }
+
+section {
+  position: relative;
+  background: #F1F1F1; }
+  section div.main_bg {
+    min-width: 1120px;
+    height: 675px;
+    background-position: center center;
+    background-size: cover; }
+  section div.main_5tab {
+    position: absolute;
+    top: 430px;
+    left: 0;
+    right: 0; }
+    section div.main_5tab ul {
+      width: 1120px;
+      margin: 0 auto; }
+      section div.main_5tab ul::after {
+        display: block;
+        content: '';
+        clear: both; }
+      section div.main_5tab ul li {
+        position: relative;
+        width: 210px;
+        height: 330px;
+        border-top: 3px solid #FF9500;
+        box-sizing: border-box;
+        float: left;
+        padding: 20px;
+        margin-right: 17px;
+        background-color: #fff;
+        background-repeat: no-repeat;
+        background-position: top center;
+        -webkit-box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.4);
+        -moz-box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.4);
+        box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.4); }
+        section div.main_5tab ul li:last-child {
+          margin-right: 0; }
+        section div.main_5tab ul li p {
+          margin-top: 170px;
+          padding-bottom: 10px;
+          color: #ff9500;
+          font-family: serif;
+          font-style: italic;
+          letter-spacing: -1px; }
+        section div.main_5tab ul li h2 {
+          font-size: 20px;
+          color: #666;
+          font-weight: 200; }
+        section div.main_5tab ul li div.view_detail {
+          position: absolute;
+          bottom: 25px;
+          text-transform: uppercase;
+          font-size: 12px;
+          color: #666;
+          font-weight: 600; }
+          section div.main_5tab ul li div.view_detail::after {
+            content: ">";
+            padding-left: 10px; }
+  section div.main_3tab {
+    width: 1120px;
+    margin: 0 auto;
+    padding-top: 150px; }
+    section div.main_3tab ul::after {
+      display: block;
+      content: '';
+      clear: both; }
+    section div.main_3tab ul li {
+      float: left;
+      position: relative;
+      width: 33.33333%;
+      text-align: center; }
+      section div.main_3tab ul li::after {
+        content: '';
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        width: 1px;
+        background: #f2f2f2;
+        background: -moz-linear-gradient(top, #f2f2f2 0%, #c7c7c7 32%, #c7c7c7 74%, #f1f1f1 100%);
+        background: -webkit-gradient(left top, left bottom, color-stop(0%, #f2f2f2), color-stop(32%, #c7c7c7), color-stop(74%, #c7c7c7), color-stop(100%, #f1f1f1));
+        background: -webkit-linear-gradient(top, #f2f2f2 0%, #c7c7c7 32%, #c7c7c7 74%, #f1f1f1 100%);
+        background: -o-linear-gradient(top, #f2f2f2 0%, #c7c7c7 32%, #c7c7c7 74%, #f1f1f1 100%);
+        background: -ms-linear-gradient(top, #f2f2f2 0%, #c7c7c7 32%, #c7c7c7 74%, #f1f1f1 100%);
+        background: linear-gradient(to bottom, #f2f2f2 0%, #c7c7c7 32%, #c7c7c7 74%, #f1f1f1 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f2f2f2', endColorstr='#f1f1f1', GradientType=0 ); }
+      section div.main_3tab ul li:last-child::after {
+        content: '';
+        display: none; }
+      section div.main_3tab ul li h2 {
+        font-size: 20px;
+        font-weight: 600;
+        color: #333; }
+      section div.main_3tab ul li p {
+        padding: 10px 0;
+        font-size: 14px;
+        color: #333; }
+      section div.main_3tab ul li div.read_more {
+        width: 100px;
+        margin: 20px auto;
+        border: 1px solid #999;
+        box-sizing: border-box;
+        padding: 6px 0 4px;
+        font-size: 12px;
+        background: white;
+        background: -moz-linear-gradient(top, white 0%, #f6f6f6 47%, #dbdbdb 100%);
+        background: -webkit-gradient(left top, left bottom, color-stop(0%, white), color-stop(47%, #f6f6f6), color-stop(100%, #dbdbdb));
+        background: -webkit-linear-gradient(top, white 0%, #f6f6f6 47%, #dbdbdb 100%);
+        background: -o-linear-gradient(top, white 0%, #f6f6f6 47%, #dbdbdb 100%);
+        background: -ms-linear-gradient(top, white 0%, #f6f6f6 47%, #dbdbdb 100%);
+        background: linear-gradient(to bottom, white 0%, #f6f6f6 47%, #dbdbdb 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#dbdbdb', GradientType=0 );
+        -webkit-box-shadow: 1px 1px 7px 0px rgba(0, 0, 0, 0.1);
+        -moz-box-shadow: 1px 1px 7px 0px rgba(0, 0, 0, 0.1);
+        box-shadow: 1px 1px 7px 0px rgba(0, 0, 0, 0.1); }
+  section div.center_banner {
+    margin-top: 100px;
+    background: url(../images/bg_tab2.jpg) no-repeat;
+    background-size: cover;
+    padding: 75px 0;
+    text-align: center;
+    text-shadow: 0 0 2px rgba(0, 0, 0, 0.3), 0 2px 2px rgba(0, 0, 0, 0.2); }
+    section div.center_banner h2 {
+      font-size: 30px;
+      color: #f6a700;
+      font-weight: 200; }
+      section div.center_banner h2 strong {
+        font-weight: 700;
+        color: #fff; }
+    section div.center_banner p {
+      padding: 10px;
+      font-size: 18px;
+      color: #fff; }
+    section div.center_banner div.shortcut_box {
+      display: inline-block;
+      margin: 0 auto;
+      padding-top: 30px; }
+      section div.center_banner div.shortcut_box::after {
+        display: block;
+        content: '';
+        clear: both; }
+      section div.center_banner div.shortcut_box div.shortcut {
+        position: relative;
+        cursor: pointer;
+        margin-right: 30px;
+        border: 2px solid #fff;
+        box-sizing: border-box;
+        padding: 16px 20px;
+        width: 300px;
+        color: #fff;
+        float: left;
+        font-size: 22px;
+        text-align: left;
+        font-weight: 300; }
+        section div.center_banner div.shortcut_box div.shortcut::after {
+          content: '바로가기';
+          position: absolute;
+          right: 20px;
+          bottom: 16px;
+          font-size: 16px; }
+        section div.center_banner div.shortcut_box div.shortcut:last-child {
+          margin-right: 0; }
+  section div.speciality, section div.portfolio {
+    padding: 100px 0;
+    text-align: center; }
+    section div.speciality h1, section div.portfolio h1 {
+      font-size: 40px;
+      font-weight: 200;
+      position: relative;
+      padding-bottom: 20px; }
+      section div.speciality h1 strong, section div.portfolio h1 strong {
+        font-weight: 700; }
+      section div.speciality h1::after, section div.portfolio h1::after {
+        content: '';
+        display: block;
+        position: absolute;
+        width: 150px;
+        height: 1px;
+        background: #000;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin: 0 auto; }
+    section div.speciality p.description, section div.portfolio p.description {
+      color: #999;
+      font-weight: 700;
+      padding-top: 25px; }
+  section div.speciality {
+    background: #fff; }
+    section div.speciality div.main_6tab {
+      padding-top: 100px;
+      width: 1120px;
+      margin: 0 auto; }
+      section div.speciality div.main_6tab ul::after {
+        display: block;
+        content: '';
+        clear: both; }
+      section div.speciality div.main_6tab ul li {
+        width: 140px;
+        float: left;
+        margin-right: 55px; }
+        section div.speciality div.main_6tab ul li:last-child {
+          margin-right: 0; }
+        section div.speciality div.main_6tab ul li figure {
+          position: relative; }
+          section div.speciality div.main_6tab ul li figure img {
+            width: 130px;
+            height: 130px;
+            border-radius: 50%; }
+          section div.speciality div.main_6tab ul li figure figcaption div.img_title {
+            position: absolute;
+            top: 46px;
+            left: 0;
+            right: 0;
+            text-shadow: 0 0 2px rgba(0, 0, 0, 0.3), 0 2px 2px rgba(0, 0, 0, 0.2); }
+            section div.speciality div.main_6tab ul li figure figcaption div.img_title p.title1 {
+              font-family: serif;
+              font-style: italic;
+              font-size: 14px;
+              color: #f6a700; }
+            section div.speciality div.main_6tab ul li figure figcaption div.img_title p.title2 {
+              font-family: serif;
+              font-style: italic;
+              font-weight: 600;
+              font-size: 22px;
+              color: #fff;
+              padding-top: 4px; }
+          section div.speciality div.main_6tab ul li figure figcaption h2 {
+            padding-top: 20px;
+            font-size: 14px;
+            font-weight: 700;
+            letter-spacing: -0.5px; }
+    section div.speciality div.shortcut {
+      position: relative;
+      cursor: pointer;
+      margin: 80px auto 0;
+      border: 2px solid #999;
+      box-sizing: border-box;
+      padding: 16px 20px;
+      width: 320px;
+      color: #000;
+      font-size: 22px;
+      text-align: left;
+      font-weight: 300; }
+      section div.speciality div.shortcut::after {
+        content: '바로가기';
+        position: absolute;
+        right: 20px;
+        bottom: 16px;
+        font-size: 16px; }
+  section div.portfolio {
+    background: #F1F1F1; }
+    section div.portfolio div.buttom_6tab {
+      padding-top: 60px;
+      width: 1120px;
+      margin: 0 auto; }
+      section div.portfolio div.buttom_6tab ul::after {
+        display: block;
+        content: '';
+        clear: both; }
+      section div.portfolio div.buttom_6tab ul li {
+        width: 346px;
+        border: 1px solid #ccc;
+        box-sizing: border-box;
+        float: left;
+        margin-right: 40px;
+        margin-bottom: 25px; }
+        section div.portfolio div.buttom_6tab ul li:nth-child(3n+3) {
+          margin-right: 0; }
+        section div.portfolio div.buttom_6tab ul li figure {
+          position: relative;
+          background: #fff; }
+          section div.portfolio div.buttom_6tab ul li figure img {
+            width: 100%; }
+          section div.portfolio div.buttom_6tab ul li figure figcaption {
+            text-align: left;
+            padding: 20px 10px;
+            color: #666; }
+            section div.portfolio div.buttom_6tab ul li figure figcaption div.logo {
+              position: absolute;
+              top: 20px;
+              left: 0;
+              width: 90px;
+              background: #fff;
+              padding-left: 4px; }
+              section div.portfolio div.buttom_6tab ul li figure figcaption div.logo img {
+                width: 70px; }
+            section div.portfolio div.buttom_6tab ul li figure figcaption p {
+              padding-bottom: 4px; }
+            section div.portfolio div.buttom_6tab ul li figure figcaption p.date {
+              padding-bottom: 10px; }
+            section div.portfolio div.buttom_6tab ul li figure figcaption p.categories::before {
+              content: '- 분류 : '; }
+            section div.portfolio div.buttom_6tab ul li figure figcaption p.construction::before {
+              content: '- 시공일 : '; }
+    section div.portfolio div.contact {
+      cursor: pointer;
+      margin: 60px auto 0;
+      width: 255px;
+      padding: 20px;
+      font-size: 18px;
+      font-weight: 700;
+      border: 1px solid #F4A828;
+      box-sizing: border-box;
+      background: #fed944;
+      background: -moz-linear-gradient(top, #fed944 0%, #fdbd3c 100%);
+      background: -webkit-gradient(left top, left bottom, color-stop(0%, #fed944), color-stop(100%, #fdbd3c));
+      background: -webkit-linear-gradient(top, #fed944 0%, #fdbd3c 100%);
+      background: -o-linear-gradient(top, #fed944 0%, #fdbd3c 100%);
+      background: -ms-linear-gradient(top, #fed944 0%, #fdbd3c 100%);
+      background: linear-gradient(to bottom, #fed944 0%, #fdbd3c 100%);
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fed944', endColorstr='#fdbd3c', GradientType=0 );
+      -webkit-box-shadow: 1px 1px 7px 0px rgba(0, 0, 0, 0.2);
+      -moz-box-shadow: 1px 1px 7px 0px rgba(0, 0, 0, 0.2);
+      box-shadow: 1px 1px 7px 0px rgba(0, 0, 0, 0.2); }
+
+footer div.brand_list {
+  width: 1120px;
+  margin: 0 auto; }
+  footer div.brand_list ul::after {
+    display: block;
+    content: '';
+    clear: both; }
+  footer div.brand_list ul li {
+    float: left;
+    margin-right: 38px;
+    -webkit-filter: grayscale(1);
+    filter: grayscale(1); }
+    footer div.brand_list ul li:hover {
+      -webkit-filter: grayscale(0);
+      filter: grayscale(0);
+      transition: .5s all ease; }
+    footer div.brand_list ul li:last-child {
+      margin-right: 0; }
+    footer div.brand_list ul li img {
+      width: 100%; }
+footer div.sitemap {
+  background: #333;
+  color: #999;
+  padding: 50px; }
+  footer div.sitemap ul.sitemap_ul {
+    width: 1120px;
+    margin: 0 auto; }
+    footer div.sitemap ul.sitemap_ul::after {
+      display: block;
+      content: '';
+      clear: both; }
+    footer div.sitemap ul.sitemap_ul li.sitemap_li {
+      position: relative;
+      width: 20%;
+      border: 1px solid #333;
+      box-sizing: border-box;
+      float: left;
+      padding: 20px 0 0 20px; }
+      footer div.sitemap ul.sitemap_ul li.sitemap_li::after {
+        content: '';
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        width: 1px;
+        background: #f6f6f6;
+        background: -moz-linear-gradient(top, #f6f6f6 0%, #404346 0%, #333333 65%, #333333 100%);
+        background: -webkit-gradient(left top, left bottom, color-stop(0%, #f6f6f6), color-stop(0%, #404346), color-stop(65%, #333333), color-stop(100%, #333333));
+        background: -webkit-linear-gradient(top, #f6f6f6 0%, #404346 0%, #333333 65%, #333333 100%);
+        background: -o-linear-gradient(top, #f6f6f6 0%, #404346 0%, #333333 65%, #333333 100%);
+        background: -ms-linear-gradient(top, #f6f6f6 0%, #404346 0%, #333333 65%, #333333 100%);
+        background: linear-gradient(to bottom, #f6f6f6 0%, #404346 0%, #333333 65%, #333333 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f6f6f6', endColorstr='#333333', GradientType=0 ); }
+      footer div.sitemap ul.sitemap_ul li.sitemap_li h2 {
+        font-size: 16px;
+        font-weight: 700;
+        color: #adadad;
+        padding-bottom: 20px;
+        cursor: pointer; }
+      footer div.sitemap ul.sitemap_ul li.sitemap_li ul li {
+        font-size: 13px;
+        line-height: 24px; }
+footer div.copyright {
+  padding: 30px 0 40px;
+  background: #1D1D1D;
+  text-align: center; }
+  footer div.copyright p {
+    font-size: 11px;
+    color: #757676; }
+    footer div.copyright p.address {
+      font-size: 12px;
+      font-weight: bold;
+      color: #fff;
+      line-height: 30px; }

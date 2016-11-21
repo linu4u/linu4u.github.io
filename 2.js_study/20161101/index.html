@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="initial-scale=1">
+	<title> 2016.11.01 - 레이어 호버효과 </title>
+</head>
+<body>
+	<div class="box" style="width: 200px;height: 200px;border: 1px solid #333; box-sizing: border-box;background-color: #ff0; line-height: 200px;text-align: center;">
+	호버효과 주기
+	</div>
+<script>
+
+// 해석순서 3
+function mouseEvent(e) {
+	// e = arguments[0];
+	console.log(e);
+	if (e.type == 'mouseover') { //이벤트가 마우스 오버라면
+		targetElem.style.background='red'; //targetElem의 배경을 빨강으로
+	} else if (e.type == 'mouseout') { //이벤트가 마우스아웃 이라면
+		targetElem.style.background='yellow'; //targetElem의 배경색을 노랑으로
+	} else if (e.type == 'click') { //이벤트가 클릭이라면
+		targetElem.style.background='blue'; //targetElem의 배경색을 파랑으로
+	}
+}
+
+// 해석순서1
+var srcElem = document.getElementsByClassName("box"); //box클래스를 찾아서 변수 srcElem에 지정
+var targetElem = srcElem[0]; //클래스의 경우 객체로 들어가기 때문에 1개밖에 없을지라도 [0]으로 지저을 해줘야 해서 변수로 지정
+
+// 해석순서2
+targetElem.onclick = targetElem.onmouseover = targetElem.onmouseout = mouseEvent; // 다른 하나로 담는 느낌 담는듯한데
+
+
+</script>
+	<!-- //자바스크립트 -->
+</body>
+</html>

@@ -1,0 +1,122 @@
+/* reset */
+body, ul, li, img {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    vertical-align: middle;
+}
+ul, li {
+    list-style: none;
+}
+/* reset */
+
+.header {
+    width: 800px;
+    margin: 0 auto;
+}
+
+.main-list {
+    position: relative;
+    width: 800px;
+    margin: 0 auto;
+}
+.main-list ul {}
+.main-list ul li {
+    width: 400px;
+}
+.main-list ul li img {
+    width: 100%;
+}
+
+
+
+/* 메인 리스트 포지션 */
+.main-list ul li:nth-child(1) {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.main-list ul li:nth-child(2) {
+    position: absolute;
+    top: 332px;
+    right: 0;
+}
+.main-list ul li:nth-child(3) {
+    position: absolute;
+    top: 400px;
+    left: 0;
+}
+.main-list ul li:nth-child(4) {
+    position: absolute;
+    top: 732px;
+    right: 0;
+}
+.main-list ul li:nth-child(5) {
+    position: absolute;
+    top: 1000px;
+    left: 0;
+}
+.main-list ul li:nth-child(6) {
+    position: absolute;
+    top: 1132px;
+    right: 0;
+}
+/* 메인 리스트 포지션 */
+/* 채우기용 포지션 */
+.main-list ul li:nth-child(7) {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.main-list ul li:nth-child(8) {
+    position: absolute;
+    top: 800px;
+    left: 0;
+}
+.main-list ul li:nth-child(9) {
+    position: absolute;
+    top: 1400px;
+    left: 0;
+}
+/* 채우기용 포지션 */
+
+
+.end::before {
+    content: '기간이 종료 되었습니다.';
+    display: block;
+    position: absolute;
+    padding-top: 50%;
+    text-align: center;
+    font-size: 18px;
+    color: #fff;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;    
+    background: rgba(51, 51, 51, 0.8);
+    z-index: 10;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

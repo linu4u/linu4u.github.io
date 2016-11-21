@@ -1,0 +1,290 @@
+@charset "UTF-8";
+/* 리셋 기본 css */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1;
+  background: #14353D; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/* 리셋 기본 css */
+section {
+  position: relative;
+  width: 550px;
+  height: 460px;
+  border: 1px solid #fff; }
+  section p {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding: 5px;
+    color: #fff; }
+
+svg {
+  position: absolute;
+  padding: 10px; }
+
+.sun {
+  width: 100px;
+  height: 100px;
+  left: 5px;
+  top: -20px;
+  animation: rotate 5s linear infinite; }
+
+.star_box {
+  position: absolute;
+  left: 195px;
+  top: 0px; }
+  .star_box .star2 {
+    animation: hideshow 4s ease infinite; }
+  .star_box .star1 {
+    left: 28px;
+    top: 33px;
+    animation: hideshow 3s ease infinite; }
+
+.moon_box {
+  position: absolute;
+  left: 350px;
+  top: 5px; }
+  .moon_box .moon {
+    width: 40px;
+    height: 35px;
+    animation: rotate2 5s linear infinite; }
+
+.rainbow_box {
+  position: absolute;
+  left: 460px;
+  top: 75px; }
+  .rainbow_box .rainbow {
+    width: 55px;
+    height: 30px;
+    animation: rotate3 3s linear infinite; }
+
+.rain_box {
+  position: absolute;
+  left: 10px;
+  top: 225px; }
+  .rain_box .rain1 {
+    width: 7px;
+    height: 11px;
+    left: 18px;
+    top: 5px;
+    animation: rain 1s linear infinite; }
+  .rain_box .rain2 {
+    width: 42px;
+    height: 17px;
+    animation: rain 1.3s ease infinite; }
+
+.snow_box {
+  position: absolute;
+  left: 160px;
+  top: 225px; }
+  .snow_box .snow1 {
+    width: 18px;
+    height: 22px;
+    animation: snow1 4s ease infinite; }
+  .snow_box .snow2 {
+    width: 29px;
+    height: 29px;
+    left: 25px;
+    animation: snow2 4s ease infinite; }
+
+.hailstone_box {
+  position: absolute;
+  left: 313px;
+  top: 225px; }
+  .hailstone_box .hailstone1 {
+    left: 10px;
+    animation: rain 3s ease infinite; }
+  .hailstone_box .hailstone2 {
+    top: 5px;
+    animation: rain 3.3s ease infinite; }
+
+.whirlwind_box {
+  position: absolute;
+  left: 462px;
+  top: 225px; }
+  .whirlwind_box .whirlwind1 {
+    animation: whirlwind1 4s linear infinite; }
+  .whirlwind_box .whirlwind2 {
+    top: 18px;
+    left: 15px;
+    animation: whirlwind1 3s ease infinite; }
+
+.lightning_box {
+  position: relative;
+  left: 10px;
+  top: 380px; }
+  .lightning_box .lightning1 {
+    animation: lightning1 3s ease infinite; }
+  .lightning_box .lightning2 {
+    left: 30px;
+    animation: lightning1 4s ease infinite; }
+
+.fog_box {
+  position: absolute;
+  left: 165px;
+  top: 380px;
+  animation: fog 7s ease infinite; }
+
+.wind_box {
+  position: absolute;
+  left: 300px;
+  top: 376px;
+  animation: wind 5s ease infinite; }
+
+.cloud {
+  width: 560px;
+  height: 400px;
+  top: 15px; }
+
+@keyframes wind {
+  0% {
+    opacity: 0;
+    margin-left: 0; }
+  10% {
+    opacity: 1; }
+  50% {
+    margin-left: 25px; }
+  100% {
+    opacity: 0; } }
+@keyframes fog {
+  0% {
+    opacity: 0;
+    margin-top: -30px; }
+  50% {
+    opacity: 1;
+    margin-top: 0; }
+  100% {
+    opacity: 0;
+    margin-top: -10px; } }
+@keyframes lightning1 {
+  0% {
+    opacity: 0; }
+  50% {
+    opacity: 1; }
+  70% {
+    opacity: 0; }
+  71% {
+    opacity: 1; }
+  72% {
+    opacity: 0; }
+  90% {
+    opacity: 0; }
+  91% {
+    opacity: 1; }
+  100% {
+    opacity: 0; } }
+@keyframes whirlwind1 {
+  0% {
+    margin-left: 5px;
+    opacity: 0.5; }
+  50% {
+    margin-left: -5px;
+    opacity: 1; }
+  100% {
+    margin-left: 5px;
+    opacity: 0.5; } }
+@keyframes snow2 {
+  0% {
+    opacity: 0;
+    transform: rotate(0deg);
+    margin: -5px 10px 0 0; }
+  75% {
+    opacity: 1; }
+  100% {
+    opacity: 0;
+    transform: rotate(-180deg); } }
+@keyframes snow1 {
+  0% {
+    opacity: 0;
+    margin: -10px 0 0 0; }
+  50% {
+    opacity: 0.8; }
+  75% {
+    opacity: 1; }
+  100% {
+    opacity: 0;
+    margin: 5px 0 0 -8px; } }
+@keyframes rain {
+  0% {
+    opacity: 0;
+    margin: 0 0 0 0; }
+  50% {
+    opacity: 1; }
+  100% {
+    opacity: 0;
+    margin: 10px 0 0 0; } }
+@keyframes scale {
+  0% {
+    transform: scale(1); }
+  50% {
+    transform: scale(0.7); }
+  100% {
+    transform: scale(1); } }
+@keyframes hideshow {
+  0% {
+    opacity: 0.2; }
+  50% {
+    opacity: 1; }
+  100% {
+    opacity: 0.2; } }
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg); }
+  50% {
+    transform: rotate(180deg); }
+  100% {
+    transform: rotate(360deg); } }
+@keyframes rotate2 {
+  0% {
+    transform: rotate(20deg); }
+  50% {
+    transform: rotate(-30deg); }
+  100% {
+    transform: rotate(20deg); } }
+@keyframes rotate3 {
+  0% {
+    transform: rotate(5deg); }
+  50% {
+    transform: rotate(-5deg); }
+  100% {
+    transform: rotate(5deg); } }
+/*  */

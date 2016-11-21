@@ -1,0 +1,73 @@
+@charset "UTF-8";
+@import url(http://fonts.googleapis.com/css?family=Noto+Sans);
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none; }
+
+body {
+  font-family: 'Noto Sans', 'Nanum Gothic', sans-serif;
+  font-size: 100%;
+  word-break: break-all; }
+
+.box {
+  border: 1px solid #333;
+  box-sizing: border-box; }
+
+/*리누 기본 CSS*/
+.big_box {
+  position: absolute;
+  width: 90%;
+  height: 90vh;
+  border: 1px solid #333;
+  background: #efefef;
+  margin: auto;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0; }
+  .big_box .m_box {
+    position: relative;
+    width: 100%;
+    height: 100%; }
+  .big_box .main_box {
+    position: absolute;
+    border: 1px solid #333;
+    box-sizing: border-box;
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    line-height: 100px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    border-radius: 50%;
+    -webkit-transition: 0.2s all cubic-bezier(0.175, 0.885, 0.715, 1.5);
+    -o-transition: 0.2s all cubic-bezier(0.175, 0.885, 0.715, 1.5);
+    transition: 0.2s all cubic-bezier(0.175, 0.885, 0.715, 1.5); }
+    .big_box .main_box p {
+      opacity: 0; }
+    .big_box .main_box:nth-child(1) {
+      top: 100px;
+      left: 100px; }
+      .big_box .main_box:nth-child(1):hover {
+        -webkit-transform: scale(1.2, 1.2);
+        -ms-transform: scale(1.2, 1.2);
+        -o-transform: scale(1.2, 1.2);
+        transform: scale(1.2, 1.2); }
+        .big_box .main_box:nth-child(1):hover p {
+          opacity: 1; }
+    .big_box .main_box:nth-child(2) {
+      top: 100px;
+      left: 220.0px; }
+      .big_box .main_box:nth-child(2):hover {
+        -webkit-transform: scale(1.2, 1.2);
+        -ms-transform: scale(1.2, 1.2);
+        -o-transform: scale(1.2, 1.2);
+        transform: scale(1.2, 1.2); }
+        .big_box .main_box:nth-child(2):hover p {
+          opacity: 1; }
+
+/* */

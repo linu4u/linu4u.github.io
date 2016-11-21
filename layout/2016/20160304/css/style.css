@@ -1,0 +1,73 @@
+@charset "utf-8";
+@import url(http://fonts.googleapis.com/css?family=Noto+Sans);
+
+ul, li {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+    font-family: 'Noto Sans', 'Nanum Gothic', sans-serif;
+    font-size: 100%;
+    word-break: break-all
+}
+/*리누 기본 CSS*/
+
+
+
+header {
+	background: #00f;
+	height: 80px;
+	width: 970px;
+}
+section {
+	/*min-height: 500px;*/
+}
+section nav {
+	background: #f00;
+	width: 130px;
+	float: left;
+	min-height: 500px;
+}
+section section {
+	background: #aaa;
+	width: 710px;
+	/*overflow: hidden;*/
+	float: left;
+	min-height: 500px;
+}
+section section article {
+    overflow: hidden;
+	background: #eee;
+	/*height: 30px;*/
+	margin: 20px;
+}
+section aside {
+	background: #0f0;
+	width: 130px;
+	float: left;
+	min-height: 500px;
+    height: auto;
+}
+footer {
+	background: #999;
+	clear: both;
+	width: 970px;
+	height: 100px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* */

@@ -1,0 +1,66 @@
+@charset "UTF-8";
+@import url(http://fonts.googleapis.com/css?family=Noto+Sans);
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none; }
+
+body {
+  font-family: 'Noto Sans', 'Nanum Gothic', sans-serif;
+  font-size: 100%;
+  word-break: break-all; }
+
+.box {
+  border: 1px solid #333;
+  box-sizing: border-box; }
+
+/*리누 기본 CSS*/
+.box {
+  width: 500px;
+  height: 300px;
+  -webkit-transform: rotateY(40deg) scale(0.8);
+  transform: rotateY(40deg) scale(0.8); }
+
+#div2 {
+  border-top: 0px solid #96281B;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  height: 0px;
+  width: 100px;
+  transition: .5s all ease; }
+
+#div3 {
+  border-bottom: 0px solid #F22613;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  height: 0px;
+  width: 100px;
+  transition: .5s all ease; }
+  #div3 span {
+    text-align: center;
+    opacity: 0;
+    transition: 1s all; }
+
+#div1 {
+  padding: 20px;
+  background: #eee; }
+  #div1:hover #div2 {
+    border-top: 100px solid red;
+    border-left: 0px solid transparent;
+    border-right: 0px solid transparent;
+    height: 0px;
+    width: 200px; }
+  #div1:hover #div3 {
+    border-bottom: 100px solid red;
+    border-left: 0px solid transparent;
+    border-right: 0px solid transparent;
+    height: 0px;
+    width: 200px; }
+    #div1:hover #div3 span {
+      width: 200px;
+      text-align: center;
+      opacity: 1;
+      color: #fff; }
+
+/* */

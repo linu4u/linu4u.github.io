@@ -1,0 +1,141 @@
+/* 리셋 기본 css */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* 리셋 기본 css */
+@charset "utf-8";
+@import url(http://fonts.googleapis.com/css?family=Noto+Sans);
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+body {
+    font-family: 'Noto Sans', 'Nanum Gothic', sans-serif;
+    font-size: 100%;
+    word-break: break-all
+}
+.box {border: 1px solid #333;box-sizing: border-box}
+/*리누 기본 CSS*/
+
+
+
+.main_view {
+  width: 200px;
+  height: 500px;
+  border: 1px solid #333;
+  box-sizing: border-box;
+  ul {
+    position: relative;
+    height: 100%;
+    div {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: url(../images/1_8.jpg) center center no-repeat;
+      background-size: cover;
+      z-index: 1;
+    }
+    li {
+      position: relative;
+      width: 12.5%;
+      box-sizing: border-box;
+      height: 100%;
+      float: left;
+      z-index: 2;
+      &:nth-child(1):hover ~ div {
+        background: url(../images/1_1.jpg) center center no-repeat;
+        background-size: cover;
+      }
+      &:nth-child(2):hover ~ div {
+        background: url(../images/1_2.jpg) center center no-repeat;
+        background-size: cover;
+      }
+      &:nth-child(3):hover ~ div {
+        background: url(../images/1_3.jpg) center center no-repeat;
+        background-size: cover;
+      }
+      &:nth-child(4):hover ~ div {
+        background: url(../images/1_4.jpg) center center no-repeat;
+        background-size: cover;
+      }
+      &:nth-child(5):hover ~ div {
+        background: url(../images/1_5.jpg) center center no-repeat;
+        background-size: cover;
+      }
+      &:nth-child(6):hover ~ div {
+        background: url(../images/1_6.jpg) center center no-repeat;
+        background-size: cover;
+      }
+      &:nth-child(7):hover ~ div {
+        background: url(../images/1_7.jpg) center center no-repeat;
+        background-size: cover;
+      }
+      &:nth-child(8):hover ~ div {
+        background: url(../images/1_8.jpg) center center no-repeat;
+        background-size: cover;
+      }
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* */

@@ -1,0 +1,131 @@
+@charset “utf-8″;
+/* reset */
+body, ul, li, img, h4, span {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    vertical-align: middle;
+    font-family: sans-serif;
+}
+ul, li {
+    list-style: none;
+}
+h4 {
+    margin: 0;
+    padding: 0;
+}
+/* reset */
+img {
+    width: 100%;
+}
+
+.header {
+    width: 800px;
+    margin: 0 auto;
+}
+.main-list {
+    position: relative;
+    width: 800px;
+    margin: 0 auto;
+}
+.main-list ul li {
+  position: absolute;
+  width: 400px;
+  transition: 0.5s all ease;
+  cursor: pointer;
+}
+.main-list ul li:hover {
+    border: 2px solid #fff;
+    box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    z-index: 2; 
+    -moz-box-shadow: 0 12px 15px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+    -webkit-box-shadow: 0 12px 15px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+    box-shadow: 0 12px 15px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+
+}
+
+/* 메인 리스트 영역 */
+.main-list ul > li { /* 메인 리스트 1 */
+  top: 0;
+  left: 0;
+}
+.main-list ul > li + li { /* 메인 리스트 2 */
+  top: 280px;
+  left: 400px;
+}
+.main-list ul > li + li + li { /* 메인 리스트 3 */
+  top: 400px;
+  left: 0;
+}
+.main-list ul > li + li + li + li { /* 메인 리스트 4 */
+    top: 680px;
+    left: 400px;
+}
+.main-list ul > li + li + li + li + li { /* 메인 리스트 5 */
+  top: 920px;
+  left: 0;
+}
+.main-list ul > li + li + li + li + li + li { /* 메인 리스트 6 */
+  top: 1080px;
+  left: 400px;
+}
+/* 더미 영역 */
+.main-list ul > li + li + li + li + li + li + li:hover {
+    box-shadow: none;
+    border: 0;
+    cursor: auto;
+}
+.main-list ul > li + li + li + li + li + li + li {
+  top: 0;
+  left: 400px;
+}
+.main-list ul > li + li + li + li + li + li + li + li {
+  top: 800px;
+  left: 0;
+}
+.main-list ul > li + li + li + li + li + li + li + li + li {
+  top: 1320px;
+  left: 0;
+}
+ 
+.main-list ul li > div {
+    position: absolute;
+    border: 1px solid #333;
+    padding: 10px 10px 10px 30px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    color: #efefef;
+    background: #333;
+    background: rgba(0, 0, 0, 0.7);
+}
+.main-list ul li h4 {
+    font-size: 18px;
+    padding: 3px 0 10px 0;
+}
+.main-list ul li > div > div {
+    width: 140px;
+} 
+.main-list ul li div span {
+    font-size: 12px;
+}
+
+.main-list .end::before {
+    position: absolute;
+    content: ' 특가 기간이 종료 되었습니다.';
+    text-align: center;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding-top: 50%;
+    font-size: 18px;
+    color: #fff;
+    background: rgba(0, 0, 0, 0.7);
+}
+    
+
+

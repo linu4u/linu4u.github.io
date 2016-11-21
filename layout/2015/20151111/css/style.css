@@ -1,0 +1,178 @@
+@charset "UTF-8";
+/* 리셋 기본 css */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1;
+  background: #aaa; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/* 리셋 기본 css */
+.head {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  border: 1px solid #333;
+  background: #333;
+  border-radius: 50%;
+  top: 100px;
+  left: 80px; }
+  .head::before {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 100px;
+    height: 100px;
+    background: #333;
+    border-radius: 50%;
+    bottom: 160px;
+    left: -50px; }
+  .head::after {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 100px;
+    height: 100px;
+    background: #333;
+    border-radius: 50%;
+    bottom: 160px;
+    right: -50px; }
+
+[class^=face] {
+  position: absolute;
+  width: 85px;
+  height: 120px;
+  border-radius: 50%;
+  box-sizing: border-box;
+  background: #fff; }
+
+.face1 {
+  left: 33px;
+  top: 5px; }
+
+.face2 {
+  top: 5px;
+  left: 85px; }
+
+.face3 {
+  top: 91px;
+  left: 23px;
+  transform: rotate(120deg); }
+
+.face4 {
+  top: 91px;
+  left: 92px;
+  transform: rotate(60deg); }
+
+.face5 {
+  top: 90px;
+  left: 55px; }
+
+.leye {
+  position: absolute;
+  width: 30px;
+  height: 60px;
+  border: 2px solid #333;
+  background: #fff;
+  border-radius: 50%;
+  left: 63px;
+  top: 40px; }
+  .leye::after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 17px;
+    height: 30px;
+    border-radius: 50%;
+    background: #333;
+    bottom: 0;
+    right: 3px; }
+
+.reye {
+  position: absolute;
+  width: 30px;
+  height: 60px;
+  border: 2px solid #333;
+  background: #fff;
+  border-radius: 50%;
+  left: 103px;
+  top: 40px; }
+  .reye::after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 17px;
+    height: 30px;
+    border-radius: 50%;
+    background: #333;
+    bottom: 0;
+    right: 10px; }
+
+.nose {
+  position: absolute;
+  width: 80px;
+  height: 40px;
+  border-radius: 50%;
+  border-top: 2px solid #333;
+  border-left: 2px solid #fff;
+  border-right: 2px solid #fff;
+  background: #fff;
+  top: 100px;
+  left: 58px; }
+  .nose::after {
+    content: '';
+    position: absolute;
+    width: 60px;
+    height: 40px;
+    border-radius: 50%;
+    background: #333;
+    top: 5px;
+    left: 10px; }
+
+.mouse {
+  position: absolute;
+  width: 20px;
+  height: 25px;
+  border-radius: 50%;
+  border: 2px solid #333;
+  top: 170px;
+  left: 85px; }
+
+/* */

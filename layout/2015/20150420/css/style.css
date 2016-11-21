@@ -1,0 +1,14 @@
+div {
+    width: 300px;
+    height: 100px;
+    background: #aaa;
+    cursor: pointer;
+    margin: 5px;
+}
+
+div:hover {
+    background: red;
+}
+div:hover:nth-child(3n+1) {
+    background: blue;
+}

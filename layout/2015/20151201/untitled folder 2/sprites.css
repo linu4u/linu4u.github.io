@@ -1,0 +1,70 @@
+.s-1, .s-2, .s-3, .s-4, .s-5, .s-6, .s-7, .s-8], .s-9, .s-10, .s-11{
+	background: url(sprites.png) no-repeat;
+}
+
+.s-1{
+	background-position: -10px -6px ;
+	width: 394px;
+	height: 508px;
+}
+
+.s-2{
+	background-position: -405px -4px ;
+	width: 371px;
+	height: 506px;
+}
+
+.s-3{
+	background-position: -805px 0;
+	width: 369px;
+	height: 511px;
+}
+
+.s-4{
+	background-position: -1182px 0;
+	width: 400px;
+	height: 514px;
+}
+
+.s-5{
+	background-position: 0 -526px ;
+	width: 528px;
+	height: 518px;
+}
+
+.s-6{
+	background-position: -543px -521px ;
+	width: 367px;
+	height: 494px;
+}
+
+.s-7{
+	background-position: -921px -527px ;
+	width: 378px;
+	height: 509px;
+}
+
+.s-8]{
+	background-position: -1311px -525px ;
+	width: 409px;
+	height: 481px;
+}
+
+.s-9{
+	background-position: -11px -1065px ;
+	width: 380px;
+	height: 510px;
+}
+
+.s-10{
+	background-position: -448px -1064px ;
+	width: 399px;
+	height: 504px;
+}
+
+.s-11{
+	background-position: -870px -1053px ;
+	width: 391px;
+	height: 505px;
+}
+

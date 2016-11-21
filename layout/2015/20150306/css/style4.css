@@ -1,0 +1,163 @@
+@charset “utf-8″;
+/* reset */
+body, ul, li, img {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    vertical-align: middle;
+}
+ul, li {
+    list-style: none;
+}
+/* reset */
+img {
+    width: 100%;
+}
+
+/* Mobile Device */
+.header {
+    width: 320px;
+    margin: 0 auto;
+}
+.main-list {
+    position: relative;
+    width: 320px;
+    margin: 0 auto;
+}
+.main-list ul li {
+  position: absolute;
+  width: 160px;
+  transition: 0.5s all ease;
+  cursor: pointer;
+}
+.main-list ul li:hover {
+    border: 2px solid #fff;
+    box-sizing: border-box;
+    z-index: 2; 
+    -moz-box-shadow: 0 12px 15px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+    -webkit-box-shadow: 0 12px 15px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+    box-shadow: 0 12px 15px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+
+}
+
+/* 메인 리스트 영역 */
+.main-list ul > li { /* 메인 리스트 1 */
+  top: 0;
+  left: 0;
+}
+.main-list ul > li + li { /* 메인 리스트 2 */
+  top: 112px;
+  left: 160px;
+}
+.main-list ul > li + li + li { /* 메인 리스트 3 */
+  top: 160px;
+  left: 0;
+}
+.main-list ul > li + li + li + li { /* 메인 리스트 4 */
+    top: 272px;
+    left: 160px;
+}
+.main-list ul > li + li + li + li + li { /* 메인 리스트 5 */
+  top: 368px;
+  left: 0;
+}
+.main-list ul > li + li + li + li + li + li { /* 메인 리스트 6 */
+  top: 432px;
+  left: 160px;
+}
+/* 더미 영역 */
+.main-list ul > li + li + li + li + li + li + li:hover {
+    box-shadow: none;
+    border: 0;
+    cursor: auto;
+}
+.main-list ul > li + li + li + li + li + li + li {
+  top: 0;
+  left: 160px;
+}
+.main-list ul > li + li + li + li + li + li + li + li {
+  top: 320px;
+  left: 0;
+}
+.main-list ul > li + li + li + li + li + li + li + li + li {
+  top: 528px;
+  left: 0;
+}
+
+
+
+/* Tablet Device */
+@media all and (min-width:800px) {
+
+    .header {
+        width: 800px;
+        margin: 0 auto;
+    }
+    .main-list {
+        position: relative;
+        width: 800px;
+        margin: 0 auto;
+    }
+    .main-list ul li {
+      position: absolute;
+      width: 400px;
+      transition: 0.5s all ease;
+      cursor: pointer;
+    }
+    .main-list ul li:hover {
+        border: 2px solid #fff;
+        box-sizing: border-box;
+        z-index: 2; 
+        -moz-box-shadow: 0 12px 15px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+        -webkit-box-shadow: 0 12px 15px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+        box-shadow: 0 12px 15px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+
+    }
+
+    /* 메인 리스트 영역 */
+    .main-list ul > li { /* 메인 리스트 1 */
+      top: 0;
+      left: 0;
+    }
+    .main-list ul > li + li { /* 메인 리스트 2 */
+      top: 280px;
+      left: 400px;
+    }
+    .main-list ul > li + li + li { /* 메인 리스트 3 */
+      top: 400px;
+      left: 0;
+    }
+    .main-list ul > li + li + li + li { /* 메인 리스트 4 */
+        top: 680px;
+        left: 400px;
+    }
+    .main-list ul > li + li + li + li + li { /* 메인 리스트 5 */
+      top: 920px;
+      left: 0;
+    }
+    .main-list ul > li + li + li + li + li + li { /* 메인 리스트 6 */
+      top: 1080px;
+      left: 400px;
+    }
+    /* 더미 영역 */
+    .main-list ul > li + li + li + li + li + li + li:hover {
+        box-shadow: none;
+        border: 0;
+        cursor: auto;
+    }
+    .main-list ul > li + li + li + li + li + li + li {
+      top: 0;
+      left: 400px;
+    }
+    .main-list ul > li + li + li + li + li + li + li + li {
+      top: 800px;
+      left: 0;
+    }
+    .main-list ul > li + li + li + li + li + li + li + li + li {
+      top: 1320px;
+      left: 0;
+    }
+    
+}
+
+

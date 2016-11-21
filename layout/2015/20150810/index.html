@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>2015. 08. 10 - 페이지길에와 현스크롤위치에 대한 안내 UI </title>
+<style>
+
+.top_page {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    background: #6c9cf5;
+    height: 5px;
+    transition: 0.3s all ease;
+}
+.top_page div.percent_bar {
+    position: fixed;
+    left: 0;
+    top: 0;
+    right:0;
+    background: #aaa;
+    height: 5px;
+    transition: 0.3s all ease;
+}
+section p {
+    padding: 100px;
+}
+
+</style>
+</head>
+<body>
+<!-- 페이지 시작 -->
+    <!-- 헤더 -->
+    <header>
+        <div id="top_page" class="top_page">
+            
+            <div class="percent_bar">
+                
+            </div>
+            
+<!--         	<span id="scrollValue"> </span> -->
+        </div>
+           
+    </header>
+    <!-- //헤더 -->
+    <!-- 메인섹셔 -->
+    <section>
+        <p class="1">내용</p>
+        <p class="2">내용</p>
+        <p class="3">내용</p>
+        <p class="4">내용</p>
+        <p class="5">내용</p>
+        <p class="6">내용</p>
+        <p class="7">내용</p>
+        <p class="8">내용</p>
+        <p class="9">내용</p>
+        <p class="10">내용</p>
+        <p class="1">내용</p>
+        <p class="2">내용</p>
+        <p class="3">내용</p>
+        <p class="4">내용</p>
+        <p class="5">내용</p>
+        <p class="6">내용</p>
+        <p class="7">내용</p>
+        <p class="8">내용</p>
+        <p class="9">내용</p>
+        <p class="10">내용</p>
+    </section>
+    <!-- //메인섹셔 -->
+    
+    <footer>
+        
+    </footer>
+    <!-- //푸터 -->
+<!-- //페이지 끝 -->
+<!-- 자바스크립트 -->
+<script src="http://code.jquery.com/jquery.js"></script>
+<script>
+
+$ ( function () {
+    $ (window) .scroll (function() {        
+        // 스크롤 값을 취득
+        var value = $( this ).scrollTop ();
+        var docHeight = $(document).height();
+        var winHeight = $(window).height();
+        var percent = (value/(docHeight-winHeight))*100;
+        $("#scrollValue").text(percent);
+        $(".percent_bar").css("left",percent+"%");
+        if (percent < 3) {
+            $(".top_page").css("height","5");
+            $(".percent_bar").css("height","5");
+        } else {
+            $(".top_page").css("height","30");
+            $(".percent_bar").css("height","30");            
+        };
+    });
+
+});
+</script>
+<!-- //자바스크립트 -->
+</body>
+</html>

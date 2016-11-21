@@ -1,0 +1,90 @@
+/* reset */
+body, ul, li, img {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    vertical-align: middle;
+}
+ul, li {
+    list-style: none;
+}
+/* reset */
+
+img {
+    width: 100%;
+}
+.header {
+    width: 200px;
+    margin: 0 auto;
+}
+
+.main-list {
+    position: relative;
+    width: 200px;
+    margin: 0 auto;
+}
+.main-list ul li {
+    width: 100px;
+}
+
+[class^=img], [class^=dummy] {
+    position: absolute;
+    width: 100px;
+}
+
+.main-list ul li .img1 {
+    top: 0;
+    left: 0;
+}
+.main-list ul li .img2 {
+    top: 70px;
+    right: 0;
+}
+.main-list ul li .img3 {
+    top: 100px;
+}
+.main-list ul li .img4 {
+    top: 170px;
+    right: 0;
+}
+.main-list ul li .img5 {
+    top: 230px;
+}
+.main-list ul li .img6 {
+    top: 270px;
+    right: 0;
+}
+
+.main-list ul li .dummy1 {
+    top: 0px;
+    right: 0;
+}
+.main-list ul li .dummy2 {
+    top: 200px;
+}
+.main-list ul li .dummy3 {
+    top: 330px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

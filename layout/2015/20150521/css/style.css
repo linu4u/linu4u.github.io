@@ -1,0 +1,98 @@
+/* 리셋 기본 css */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* 리셋 기본 css */
+
+
+[class^="box"] {
+  position: relative;
+  width: 150px;
+  height: 500px;
+  box-sizing: border-box;
+  float: left;
+  background: #efefef;
+  transition: .5s all ease;
+}
+
+.box_1 {
+	width: 600px;
+  background: url(../img/img_01.jpg) center center no-repeat;
+  background-size: cover;
+	border-right: 1px solid #aaa;
+}
+.box_2 {
+  background: url(../img/img_02.jpg) center center no-repeat;
+  background-size: cover;
+	border-right: 1px solid #aaa;
+}
+.box_3 {
+  background: url(../img/img_03.jpg) center center no-repeat;
+  background-size: cover;
+}
+
+[class^="box"]:hover::before {
+	content: '';
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: rgba(255, 255, 255, 0.5);
+}
+
+
+
+
+
+
+
+
+
+.big_box {
+  padding-top: 50px;
+  width: 900px;
+  height: 500px;
+  margin: 0 auto;
+}
