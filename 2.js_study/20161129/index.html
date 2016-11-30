@@ -14,7 +14,9 @@
 	<br />
 	<div>사용자 : <span id="user"></span></div>
 	<div>컴퓨터 : <span id="computer"></span></div>
-	<div>승부 : <span id="result"></span></div>
+	<div>결과 : <span id="result"></span></div>
+	<div>누적결과 : 사용자 vs 컴퓨터 =  <span id="result_User">0</span> : <span id="result_Computer">0</span></div>
+
 	<!-- <div>디버깅 : 랜덤값 : <span id="random"></span> / 사용자값 : <span id="user_d"></span> / 컴퓨터값 : <span id="computer_d"></span></div> -->
 
 	<!-- 자바스크립트 -->
@@ -23,8 +25,10 @@
 	var r = "바위";
 	var s = "가위";
 	var p = "보";
-	var comrsp_d = "";
-	var rsp_d = "";
+	// var comrsp_d = "";
+	// var rsp_d = "";
+	var result_User = 0;
+	var result_Computer = 0;
 
 
 	function rspGameCom(comrsp) {
@@ -63,27 +67,40 @@ function rspc() {
 	else if ( rsp_d == "가위" ) {
 		if ( comrsp_d == "보" ) {
 			document.getElementById("result").innerHTML = "사용자 승";
+			result_User++;
 		}
 		else if ( comrsp_d == "바위" ) {
 			document.getElementById("result").innerHTML = "컴퓨터 승";
+			result_Computer++;
 		}
 	}
 	else if ( rsp_d == "바위" ) {
 		if ( comrsp_d == "보" ) {
 			document.getElementById("result").innerHTML = "컴퓨터 승";
+			result_Computer++;
+
 		}
 		else if ( comrsp_d == "가위" ) {
 			document.getElementById("result").innerHTML = "사용자 승";
+			result_User++;
 		}
 	}
 	else if ( rsp_d == "보" ) {
 		if ( comrsp_d == "바위" ) {
 			document.getElementById("result").innerHTML = "사용자 승";
+			result_User++;
 		}
 		else if ( comrsp_d == "가위" ) {
 			document.getElementById("result").innerHTML = "컴퓨터 승";
+			result_Computer++;
+			
 		}
 	}
+
+	document.getElementById("result_User").innerHTML = result_User;
+	document.getElementById("result_Computer").innerHTML = result_Computer;
+
+
 }
 
 
