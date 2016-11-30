@@ -15,7 +15,7 @@
 	<div>사용자 : <span id="user"></span></div>
 	<div>컴퓨터 : <span id="computer"></span></div>
 	<div>승부 : <span id="result"></span></div>
-	<div>디버깅 : 랜덤값 : <span id="random"></span> / 사용자값 : <span id="user_d"></span> / 컴퓨터값 : <span id="computer_d"></span></div>
+	<!-- <div>디버깅 : 랜덤값 : <span id="random"></span> / 사용자값 : <span id="user_d"></span> / 컴퓨터값 : <span id="computer_d"></span></div> -->
 
 	<!-- 자바스크립트 -->
 	<script>
@@ -36,7 +36,7 @@
 
 	function rspGame(rsp) {
 		var random = (Math.floor((Math.random() * 10) + 1) %3);
-		document.getElementById("random").innerHTML = random;
+		// document.getElementById("random").innerHTML = random;
 
 		document.getElementById("user").innerHTML = rsp;
 		rsp_d = rsp;
@@ -54,8 +54,8 @@
 	};
 
 function rspc() {
-	document.getElementById("user_d").innerHTML = rsp_d;
-	document.getElementById("computer_d").innerHTML = comrsp_d;
+	// document.getElementById("user_d").innerHTML = rsp_d;
+	// document.getElementById("computer_d").innerHTML = comrsp_d;
 
 	if ( comrsp_d == rsp_d ) {
 		document.getElementById("result").innerHTML = "비김";
