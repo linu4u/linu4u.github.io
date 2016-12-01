@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="initial-scale=1">
+	<title> 2016.11.29 - 컴퓨터와 하는 가위바위보 게임 </title>
+</head>
+<body>
+
+
+<!-- 자바스크립트 -->
+<script>
+
+var number = 0;
+var maxNumber = 30;
+
+for (var i = 0; i <= maxNumber; i++) {
+	var nLen = number.toString().length;
+	console.log(nLen);
+	if ( nLen == 1 ) {
+		document.write("000"+ number + "<br />");
+	}
+	else if ( nLen == 2 ) {
+		document.write("00"+ number + "<br />");
+	}
+	else if ( nLen == 3 ) {
+		document.write("0"+ number + "<br />");
+	}
+	number++;
+}
+
+
+</script>
+<!-- //자바스크립트 -->
+</body>
+</html>
