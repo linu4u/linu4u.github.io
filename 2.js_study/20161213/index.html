@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<title> 2016.12.13 - 파라미터 체크 개발 </title>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<div class="a" id="a"><a href="index.html">가나다</a></div>
+	<div class="b" id="b"><a href="?scode=005">BEST</a></div>
+	<div class="c" id="c">가나다</div>
+
+
+	<!-- 내부 스크립트 -->
+	<script>
+	var href = window.location.href;
+	var queryString = href.split('?');
+	var params = queryString[1].split('&');
+	var size = params.length;
+	var target = document.getElementById("b");
+
+
+	for ( var i=0; i<size; i++ ) {
+		var param = params[i].split('=');
+	//         alert('KEY : ' + param[0] + "\n" + 'VALUE : ' + param[1]);
+			if ( param[0] == 'scode' ) {
+				console.log("ok");
+				target.style.display = "none";zz
+			}
+	}
+
+
+
+
+	</script>
+	<!-- //자바스크립트 -->
+</body>
+</html>

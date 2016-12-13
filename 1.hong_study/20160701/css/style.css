@@ -96,3 +96,11 @@ main section ul li p {
   padding: 5px;
   font-size: 15px;
 }
+
+div {
+  height: 200px;
+  width: 100px;
+  position: absolute;
+  border: 1px solid #333;
+  box-sizing: border-box;
+}
