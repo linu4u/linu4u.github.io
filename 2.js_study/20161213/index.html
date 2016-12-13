@@ -5,11 +5,27 @@
 	<meta name="viewport" content="initial-scale=1">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 	<title> 2016.12.13 - 파라미터 체크 개발 </title>
+	<style>
+	.menu1 {
+		display: block;
+	}
+	.menu2 {
+		display: none;
+	}
+	</style>
 </head>
 <body>
-	<div class="a" id="a"><a href="?mcode=004">가나다</a></div>
-	<div class="b" id="b"><a href="?scode=005">BEST</a></div>
-	<div class="c" id="c"><a href="index.html">가나다</a></div>
+
+	<div class="menu1" id="menu1">
+		<div class="a" id="a"><a href="?mcode=004">가나다</a></div>
+		<div class="b" id="b"><a href="?scode=005">BEST</a></div>
+		<div class="c" id="c"><a href="index.html">가나다</a></div>
+	</div>
+
+	<div class="menu2" id="menu2">
+		<div class="a" id="a2"><a href="?mcode=004">라마바</a></div>
+		<div class="c" id="c2"><a href="index.html">사아자</a></div>
+	</div>
 
 	<!-- 내부 스크립트 -->
 	<script>
@@ -17,12 +33,14 @@
 	var queryString = href.split('?'); // url을 '?'를 기준으로 앞뒤로 나누어 배열로 저장한다
 	var params = queryString[1].split('&'); // 'queryString'의 뒷쪽에 있는 내용을 또 '&'를 기준으로 나눈다
 	var size = params.length; // 파라미터들의 갯수를 구한다
-	var target = document.getElementById("b"); // 숨겨야할 영역의 ID값을 넣는다
+	var target1 = document.getElementById("menu1"); // 숨겨야할 영역의 ID값을 넣는다
+	var target2 = document.getElementById("menu2"); // 기본 영역의 ID값을 넣는다
 
 	for ( var i=0; i<size; i++ ) { // 파라미터 갯수만큼 반복한다
 		var param = params[i].split('=');  // 파라미터를 '='으로 나눈다
 			if ( param[0] == 'scode' && param[1] == '005') { // 파라미터이름이 scode이고 내용이 005인게 있다면!!
-				target.style.display = "none"; // 숨겨야할 그넘의 엘리먼트를 숨겨버린다!!
+				target1.style.display = "none"; // 숨겨야할 그넘의 엘리먼트를 숨겨버린다!!
+				target2.style.display = "block"; // 숨겨야할 그넘의 엘리먼트를 숨겨버린다!!
 			}
 	}
 	</script>
