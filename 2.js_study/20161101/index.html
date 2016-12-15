@@ -5,32 +5,42 @@
 	<meta name="viewport" content="initial-scale=1">
 	<title> 2016.11.01 - 레이어 호버효과 </title>
 </head>
+<style>
+.box {
+	width: 200px;
+	height: 200px;
+	border: 1px solid #333;
+	background-color: yellow;
+	line-height: 200px;
+	text-align: center;
+}
+</style>
 <body>
-	<div class="box" style="width: 200px;height: 200px;border: 1px solid #333; box-sizing: border-box;background-color: #ff0; line-height: 200px;text-align: center;">
-	호버효과 주기
+	<div class="box">
+		호버효과주기
 	</div>
 <script>
 
-// 해석순서 3
-function mouseEvent(e) {
-	// e = arguments[0];
-	console.log(e);
-	if (e.type == 'mouseover') { //이벤트가 마우스 오버라면
-		targetElem.style.background='red'; //targetElem의 배경을 빨강으로
-	} else if (e.type == 'mouseout') { //이벤트가 마우스아웃 이라면
-		targetElem.style.background='yellow'; //targetElem의 배경색을 노랑으로
-	} else if (e.type == 'click') { //이벤트가 클릭이라면
-		targetElem.style.background='blue'; //targetElem의 배경색을 파랑으로
-	}
-}
+// 1. 변수 지정
+var srcElem = document.getElementsByClassName("box"); //box 클래스가 들어있는 엘리먼트를 찾아서 배열로 담는다.
+var targetElem = srcElem[0]; // 첫번째 box라는 클래스가 들어있는 엘리먼트를 변수로 지정한다.
 
-// 해석순서1
-var srcElem = document.getElementsByClassName("box"); //box클래스를 찾아서 변수 srcElem에 지정
-var targetElem = srcElem[0]; //클래스의 경우 객체로 들어가기 때문에 1개밖에 없을지라도 [0]으로 지저을 해줘야 해서 변수로 지정
+// 2. 이벤트 대입
+targetElem.onclick = // 해당 엘리먼트의 클릭 이벤트를 대입
+targetElem.onmouseover = // 해당 엘리먼트의 마우스 오버 이벤트를 대입
+targetElem.onmouseout = // 해당 엘이먼트의 마우스 아웃 이벤트를 대입
+mouseEvent; // 위에 3개를 몽땅 이넘한테 대입
 
-// 해석순서2
-targetElem.onclick = targetElem.onmouseover = targetElem.onmouseout = mouseEvent; // 다른 하나로 담는 느낌 담는듯한데
-
+// 3. 이벤트를 이용하기 위한 실행 함수
+function mouseEvent(e) { // 마우스에 e이벤트가 발생하면 실행!
+    if (e.type == 'mouseover') { // 그 이벤트가 마우스오버 이면
+        targetElem.style.background = 'red'; // 타겟 엘리먼트의 배경을 red로 변경
+    } else if (e.type == 'mouseout') { // 마우스 아웃 이벤트가 발생했다면
+        targetElem.style.background = 'yellow'; // 타겟 엘리먼트의 배경을 yellow로 변경
+    } else if (e.type == 'click') { // 마우스 클릭 이벤트가 발생했다면
+        targetElem.style.background = 'blue'; // 타겟 엘리먼트의 배경을 blue로 변경
+    };
+};
 
 </script>
 	<!-- //자바스크립트 -->
