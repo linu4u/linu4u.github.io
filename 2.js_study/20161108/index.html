@@ -3,18 +3,25 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="initial-scale=1">
-	<title> 2016.11.08 - 홀수짝수 리스트 + 마우스 오버 </title>
-
+	<title> 2016.11.08 - 홀수li + 마우스 오버 </title>
+	<style>
+	ul, li {
+		padding: 0;
+		margin: 0;
+		list-style: none;
+		height: 20px;
+	}
+	</style>
 </head>
 <body>
 	<div>
 	  <ul>
-	    <li></li>
-	    <li></li>
-	    <li></li>
-	    <li></li>
-	    <li></li>
-	    <li></li>
+	    <li>1</li>
+	    <li>2</li>
+	    <li>3</li>
+	    <li>4</li>
+	    <li>5</li>
+	    <li>6</li>
 	  </ul>
 	</div>
 <script>
@@ -23,10 +30,10 @@ var liLen = srcElem.length;
 
 for ( i = 0; i <= liLen; i++ ) {
 	if ( i %2 == 0) {
-		srcElem[i].onmouseover=function() {
+		srcElem[i].onmouseover = function() {
 			this.style.background='red';
 		}
-		srcElem[i].onmouseout=function() {
+		srcElem[i].onmouseout = function() {
 			this.style.background='none';
 		}
 	}
