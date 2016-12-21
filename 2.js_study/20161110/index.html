@@ -37,13 +37,12 @@
 var srcElem = document.getElementsByTagName("li");
 var liLen = srcElem.length;
 
-for ( i = 0; i <= liLen; i++ ) {
+for ( i = 0; i < liLen; i++ ) { // i가 liLen보다 작으면 1을 더한다
 	if (i == 0 || i %3 === 0 ) { // 첫번째 li 이거나 4710번째 li
-		srcElem[i].className += 'color_red';
+		srcElem[i].className += 'color_red'; // 해당 i번째 엘리먼트에 .color_red 클래스를 추가하기!!
 	}
 	else if ( i %3 === 2) { //369번째.. 번째 li
-		console.log(i);
-		srcElem[i].className += 'color_blue';
+		srcElem[i].className += 'color_blue';// 해당 i번재 엘리먼트에 .color_blue 클래스 추가하기!
 	}
 }
 </script>
