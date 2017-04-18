@@ -44,7 +44,8 @@ section {
 	width: 600px;
 	height: 800px;
 	border: 10px solid #33f; box-sizing: border-box;
-	position: absolute;
+	position: relative;
+	margin: 0 auto;
 }
 div.button {
 	position: absolute;
@@ -75,5 +76,48 @@ div.capsule-box {
 		top: 360px;
 		left: 0;
 		right: 0;
+	}
+}
+
+div.capsule {
+	width: 50px;
+	height: 50px;
+	line-height: 52px;
+	text-align: center;
+	border: 1px solid #333; box-sizing: border-box;
+	border-radius: 50%;
+	position: absolute;
+	background: #efefef;
+	&.capsule_1 {
+		top: 150px;
+		left: 50px;
+	}
+	&.capsule_2 {
+		top: 250px;
+		left: 50px;
+	}
+	&.capsule_3 {
+		top: 350px;
+		left: 50px;
+	}
+	&.capsule_4 {
+		top: 450px;
+		left: 50px;
+	}
+	&.capsule_5 {
+		top: 150px;
+		right: 50px;
+	}
+	&.capsule_6 {
+		top: 250px;
+		right: 50px;
+	}
+	&.capsule_7 {
+		top: 350px;
+		right: 50px;
+	}
+	&.capsule_8 {
+		top: 450px;
+		right: 50px;
 	}
 }
