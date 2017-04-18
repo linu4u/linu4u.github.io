@@ -1,0 +1,79 @@
+@charset "utf-8";
+/* 리셋 기본 css */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after, q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+img {
+	vertical-align: middle;
+}
+a, a:hover, a:active {
+	color: inherit;
+	text-decoration: none;
+}
+/* 리셋 기본 css */
+
+section {
+	width: 600px;
+	height: 800px;
+	border: 10px solid #33f; box-sizing: border-box;
+	position: absolute;
+}
+div.button {
+	position: absolute;
+	top: 20px;
+	left: 0;
+	right: 0;
+	width: 200px;
+	height: 50px;
+	margin: 0 auto;
+	border: 1px solid #333; box-sizing: border-box;
+	text-align: center;
+	line-height: 50px;
+}
+div.capsule-box {
+	width: 150px;
+	height: 200px;
+	border: 1px solid #333; box-sizing: border-box;
+	margin: 0 auto;
+	text-align: center;
+	position: absolute;
+	background: #efefef;
+	&.top {
+		top: 150px;
+		left: 0;
+		right: 0;
+	}
+	&.bottom {
+		top: 360px;
+		left: 0;
+		right: 0;
+	}
+}
