@@ -58,6 +58,7 @@ div.button {
 	border: 1px solid #333; box-sizing: border-box;
 	text-align: center;
 	line-height: 50px;
+	cursor: pointer;
 }
 div.capsule-box {
 	width: 150px;
@@ -71,6 +72,8 @@ div.capsule-box {
 		top: 150px;
 		left: 0;
 		right: 0;
+		animation: capsule_box 3s ease infinite;
+		z-index: 11;
 	}
 	&.bottom {
 		top: 360px;
@@ -79,7 +82,21 @@ div.capsule-box {
 	}
 }
 
-div.capsule {
+input.rabox1 {
+	display: none;
+	text-indent: -9999999px;
+}
+.rabox1:checked + .capsule {
+	animation: capsule_ball 1s ease infinite;
+	border: 3px solid #f00; box-sizing: border-box;
+	&.ok {
+		transition: 1s;
+		top: 310px;
+		left: 270px;
+		z-index: 10;
+	}
+}
+.capsule {
 	width: 50px;
 	height: 50px;
 	line-height: 52px;
@@ -88,6 +105,10 @@ div.capsule {
 	border-radius: 50%;
 	position: absolute;
 	background: #efefef;
+	&:hover {
+		animation: capsule_ball 1s ease infinite;
+		border: 3px solid #f00; box-sizing: border-box;
+	}
 	&.capsule_1 {
 		top: 150px;
 		left: 50px;
@@ -106,18 +127,58 @@ div.capsule {
 	}
 	&.capsule_5 {
 		top: 150px;
-		right: 50px;
+		left: 480px;
 	}
 	&.capsule_6 {
 		top: 250px;
-		right: 50px;
+		left: 480px;
 	}
 	&.capsule_7 {
 		top: 350px;
-		right: 50px;
+		left: 480px;
 	}
 	&.capsule_8 {
 		top: 450px;
-		right: 50px;
+		left: 480px;
+	}
+}
+
+
+
+
+// 애니메이션들
+
+
+@keyframes capsule_ball {
+	0% {
+		margin: 0px;
+	}
+	25% {
+		margin-left: -5px;
+		transform: rotate(-10deg);
+	}
+	50% {
+		margin: 0;
+		transform: rotate(0deg);
+	}
+	75% {
+		margin-left: 5px;
+		transform: rotate(10deg);
+	}
+	100% {
+		margin: 0px;
+	}
+}
+
+@keyframes capsule_box {
+	0% {
+		margin-top: 0;
+	}
+	50% {
+		margin-top: -50px;
+
+	}
+	100% {
+
 	}
 }

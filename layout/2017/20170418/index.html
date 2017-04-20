@@ -33,18 +33,34 @@
 			<div class="capsule-box top">캡슐상</div>
 			<div class="capsule-box bottom">캡슐하</div>
 
-			<div class="capsule capsule_1">친구</div>
-			<div class="capsule capsule_2">애인</div>
-			<div class="capsule capsule_3">건강</div>
-			<div class="capsule capsule_4">가족</div>
-			<div class="capsule capsule_5">외모</div>
-			<div class="capsule capsule_6">명예</div>
-			<div class="capsule capsule_7">재묾</div>
-			<div class="capsule capsule_8">직장</div>
+			<input type="radio" id="trigger1" name="capsule_ball" class="rabox1">
+			<label for="trigger1" class="capsule capsule_1">친구</label>
+
+			<input type="radio" id="trigger2" name="capsule_ball" class="rabox1">
+			<label for="trigger2" class="capsule capsule_2">애인</label>
+
+			<input type="radio" id="trigger3" name="capsule_ball" class="rabox1">
+			<label for="trigger3" class="capsule capsule_3">건강</label>
+
+			<input type="radio" id="trigger4" name="capsule_ball" class="rabox1">
+			<label for="trigger4" class="capsule capsule_4">가족</label>
+
+			<input type="radio" id="trigger5" name="capsule_ball" class="rabox1">
+			<label for="trigger5" class="capsule capsule_5">외모</label>
+
+			<input type="radio" id="trigger6" name="capsule_ball" class="rabox1">
+			<label for="trigger6" class="capsule capsule_6">명예</label>
+
+			<input type="radio" id="trigger7" name="capsule_ball" class="rabox1">
+			<label for="trigger7" class="capsule capsule_7">재묾</label>
+
+			<input type="radio" id="trigger8" name="capsule_ball" class="rabox1">
+			<label for="trigger8" class="capsule capsule_8">직장</label>
 
 		</section>
 	</main>
 	<!-- //메인섹션 -->
+
 	<!-- 푸터 -->
 	<footer>
 
@@ -56,6 +72,11 @@
 	<script src="js/common.js"></script>
 	<!-- 내부 스크립트 -->
 	<script>
+		$(function () {
+			$(".button").click(function() {
+				$(".capsule").addClass("ok");
+			});
+		});
 	</script>
 	<!-- //자바스크립트 -->
 </body>
