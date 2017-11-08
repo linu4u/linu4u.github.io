@@ -1,0 +1,20 @@
+div {
+  border: 1px solid #333;
+  box-sizing: border-box;
+}
+
+.left {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  background: #efefef;
+  width: 300px;
+}
+
+.right {
+  float: right;
+  background: #ff0;
+  width: 500px;
+  height: 500px;
+}
