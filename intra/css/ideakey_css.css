@@ -1,0 +1,7 @@
+.box {
+    border: 1px solid #333; box-sizing: border-box;
+}
+
+.center {
+    text-align: center;
+}
