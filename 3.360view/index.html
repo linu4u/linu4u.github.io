@@ -4,10 +4,11 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>A simple example</title>
-    <link rel="stylesheet" href="https://cdn.pannellum.org/2.4/pannellum.css"/>
-    <script type="text/javascript" src="https://cdn.pannellum.org/2.4/pannellum.js"></script>
+    <link rel="stylesheet" href="css/pannellum.css"/>
+    <script type="text/javascript" src="js/pannellum.js"></script>
     <style>
     #panorama {
+        margin: 0 auto;
         width: 1024px;
         height: 768px;
     }
@@ -19,7 +20,13 @@
 <script>
 pannellum.viewer('panorama', {
     "type": "equirectangular",
-    "panorama": "sample.jpg"
+    "panorama": "https://linu4u.github.io/3.360view/sample.jpg",
+	"autoLoad": true,
+	"autoRotate": -2,
+    "compass": false,
+
+	"title": "사진방 출사",
+	"author": "리누"
 });
 </script>
 
