@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<title> 2018.05.09 - title </title>
+</head>
+<body>
+	<p>
+		<a href="https://api.coinmarketcap.com/v2/ticker/" target="_blank"> 1 ~ 100 순위 자료 </a> &nbsp; | &nbsp; <a href="https://api.coinmarketcap.com/v2/ticker/?start=101&limit=100" target="_blank"> 101 ~ 200 순위 자료 </a>
+	</p>
+  <textarea name="json_code" id="json_code" cols="100" rows="10"></textarea>
+  <br>
+  <p onclick="myFunction()" style="width: 200px; cursor: pointer; border: 1px solid #333; box-sizing: border-box; padding: 10px;">검출</p>
+  
+  <table style="border: 1px solid #333; box-sizing: border-box;">
+  	<caption></caption>
+  	<thead>
+  		<tr>
+  			<th>순위</th>
+  			<th>코인</th>
+  			<th>가격</th>
+  			<th>마켓캡</th>
+  		</tr>
+  	</thead>
+  	<tbody id="list">
+  	</tbody>
+  </table>
+  
+
+
+  <!-- 자바스크립트 -->
+	<script>
+	function myFunction() {
+		var json_data = JSON.parse(document.getElementById("json_code").value);
+
+		for (var i in json_data.data) {
+			document.getElementById("list").innerHTML += ( 
+			"<td>"
+			 + json_data.data[i].rank + 
+			"</td><td class='symbol'>"
+			 + json_data.data[i].symbol + 
+			"</td><td>"
+			 + json_data.data[i].quotes.USD.price + 
+			"</td><td>"
+			 + json_data.data[i].quotes.USD.market_cap + 
+			"</td>" );
+		}
+  	}
+  	</script>
+	<!-- //자바스크립트 -->
+</body>
+</html>

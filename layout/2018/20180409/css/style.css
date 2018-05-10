@@ -1,0 +1,34 @@
+.ideakey_understand_alert {
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.7);
+}
+.ideakey_understand_alert .alert_window {
+  position: absolute;
+  left: 50%;
+  top: 30%;
+  width: 200px;
+  transform: translateX(-50%);
+  color: #efefef;
+  text-align: center;
+}
+.ideakey_understand_alert .alert_window .alert_text {
+  border: 1px solid #548AB2;
+  box-sizing: border-box;
+  border-radius: 10px;
+  background: #000;
+}
+.ideakey_understand_alert .alert_window .ok_button {
+  margin-top: 20px;
+  border: 1px solid #548AB2;
+  box-sizing: border-box;
+  border-radius: 10px;
+  background: #000;
+}
+.ideakey_understand_alert .alert_window .ok_button:hover {
+  cursor: pointer;
+  background: brown;
+}
