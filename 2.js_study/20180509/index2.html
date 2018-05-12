@@ -15,7 +15,8 @@
 	<iframe src="https://api.coinmarketcap.com/v2/ticker/?start=101&limit=100" frameborder="0" width="250" height=" 150"style="border: 1px solid #333; box-sizing: border-box;"></iframe>
 	<br>
 
-  <textarea name="json_code" id="json_code" cols="100" rows="10" style="width: 498px;"></textarea>
+  <textarea name="json_code1" id="json_code1" cols="100" rows="10" style="width: 248px;"></textarea>
+  <textarea name="json_code2" id="json_code2" cols="100" rows="10" style="width: 248px;"></textarea>
   <br>
   <p onclick="myFunction()" class="clipboard" data-clipboard-target="#copy" style="width: 504px; cursor: pointer; border: 1px solid #333; box-sizing: border-box; padding: 10px; text-align: center;">검출</p>
 	<br>
@@ -42,20 +43,36 @@
 	<script>
 		function myFunction() {
 			document.getElementById("list").innerHTML = ( "" );
-			var json_data = JSON.parse(document.getElementById("json_code").value);
+			var json_data1 = JSON.parse(document.getElementById("json_code1").value);
+			var json_data2 = JSON.parse(document.getElementById("json_code2").value);
 
-			for (var i in json_data.data) {
+			for (var i in json_data1.data) {
 				document.getElementById("list").innerHTML += ( 
 				"<td style='padding: 5px;'>"
-				+ json_data.data[i].symbol + 
+				+ json_data1.data[i].symbol + 
 				"</td><td>"
-				+ json_data.data[i].rank + 
+				+ json_data1.data[i].rank + 
 				"</td><td>"
-				+ json_data.data[i].quotes.USD.price + 
+				+ json_data1.data[i].quotes.USD.price + 
 				"</td><td>"
-				+ json_data.data[i].quotes.USD.market_cap + 
+				+ json_data1.data[i].quotes.USD.market_cap + 
 				"</td>" );
 			}
+
+			for (var i in json_data2.data) {
+				document.getElementById("list").innerHTML += ( 
+				"<td style='padding: 5px;'>"
+				+ json_data2.data[i].symbol + 
+				"</td><td>"
+				+ json_data2.data[i].rank + 
+				"</td><td>"
+				+ json_data2.data[i].quotes.USD.price + 
+				"</td><td>"
+				+ json_data2.data[i].quotes.USD.market_cap + 
+				"</td>" );
+			}
+
+
 		}
 
 
@@ -69,6 +86,3 @@ window.onload = function(){
 	<!-- //자바스크립트 -->
 </body>
 </html>
-
-
-
