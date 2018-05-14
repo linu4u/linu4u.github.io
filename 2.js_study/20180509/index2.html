@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<title>:: 코인마켓캡 1~200 자료 :: </title>
+</head>
+  <p onclick="myFunction()" class="clipboard" data-clipboard-target="#copy" style="width: 504px; cursor: pointer; border: 1px solid #333; box-sizing: border-box; padding: 10px; text-align: center;">검출</p>
+	<br>
+	
+  <table id="copy" style="border: 1px solid #333; box-sizing: border-box;">
+  	<caption></caption>
+  	<thead>
+  		<tr>
+  			<th>SMA</th>
+  			<th>SMA</th>
+  		</tr>
+  	</thead>
+  	<tbody id="list">
+  	</tbody>
+  </table>
+  
+
+
+	<!-- 자바스크립트 -->
+	<script src="https://cdn.jsdelivr.net/clipboard.js/1.5.3/clipboard.min.js"></script>
+	<script src="https://code.jquery.com/jquery.js"></script>
+	<script>
+		function myFunction() {
+			document.getElementById("list").innerHTML = ( "" );
+			
+			var sma1_min = 8;  // sma1의 최소값
+			var sma1_max = 20; // sma1의 최대값
+			var sma2_min = 20; // sma2의 최소값
+			var sma2_max = 50; // sma2의 최대값
+			
+			for (var i = 7; i <= sma1_max; i++) { // 최대숫자에 도달할때까지 반복
+				for ( var b = sma2_min; b <= sma2_max; b++) { // 최대 숫자의 도달할때까지 반복
+				document.getElementById("list").innerHTML += ( 
+					"<td>"
+					+ i + 
+					"</td><td>"
+					+ b + 
+					"</td>"
+					 );					
+				}
+				sma2_min++; // 최소값 1증가
+				sma2_max++; // 최대값 1증가
+			}
+		}
+			
+
+
+		window.onload = function(){
+		    $(document).ready(function(){
+		        var clipboard = new Clipboard('.clipboard');
+		    });
+		};
+	
+
+  	</script>
+	<!-- //자바스크립트 -->
+</body>
+</html>
