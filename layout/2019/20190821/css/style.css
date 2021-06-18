@@ -1,0 +1,27 @@
+section {
+  padding: 200px;
+  background-color: #F2E5E1;
+}
+
+.photo_cover {
+  width: 300px;
+  -webkit-box-shadow: -10px 8px 10px 2px rgba(167, 167, 167, 0.8);
+  -moz-box-shadow: -10px 8px 10px 2px rgba(167, 167, 167, 0.8);
+  box-shadow: -10px 8px 10px 2px rgba(167, 167, 167, 0.8);
+}
+.photo_cover .photo2 {
+  padding: 8px;
+  box-sizing: border-box;
+  background-color: #EDE7E3;
+  border: solid #efefef;
+  border-width: 1px 2px 0 0;
+}
+.photo_cover .photo1 {
+  padding: 30px;
+  border: solid #D7CAC5;
+  border-width: 3px 4px 0 0;
+  background-color: #fff;
+}
+.photo_cover img {
+  width: 100%;
+}
